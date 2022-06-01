@@ -1,4 +1,6 @@
 .Menu {
     display: flex;
     justify-content: space-between;
+    background: red;
+    padding: 20px;
 }
