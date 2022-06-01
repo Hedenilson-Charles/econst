@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Menu from "./Menu";
+import Usuario from "./Usuario";
+import Cadastro from "./Cadastro";
+import Login from "./Login";
+import Inicio from "./Inicio";
+import Rodape from "./Rodape";
+import { Routes, Route } from "react-router-dom";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+const App = () => {
+  return(
+    <div>
+      <Menu/>
+      
+
+      <Routes>
+        <Route path="/" element={<Inicio/>} />
+        <Route path="/usuario" element={<Usuario/>}/>
+        <Route path="/cadastro" element={<Cadastro/>}/>
+        <Route path="/login" element={<Login/>}/>
+      </Routes>
+
+      <Rodape/>
     </div>
   );
 }
