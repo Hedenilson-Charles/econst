@@ -1,8 +1,10 @@
 import React from 'react';
 
 const Rodape = () => {
+
+    require('./estilos/rodape.css');
     return ( 
-        <div>
+        <div className='Rodape'>
             <p>Rodape</p>
         </div>
      );

@@ -10,7 +10,11 @@ const Menu = () => {
         <div className="Menu">
 
             <div className="Logo">
-                <img src="#"/>
+
+                <Link to={'/'}>
+                   <img src="#"/>
+                </Link>
+                
             </div>
 
             <div>

@@ -11,8 +11,11 @@ import Pesquisa from "./Pesquisa";
 import Carrinho from "./Carrinho";
 
 const App = () => {
+
+  require('./estilos/app.css');
+
   return(
-    <div>
+    <div className="App">
       <Menu/>
       
 
