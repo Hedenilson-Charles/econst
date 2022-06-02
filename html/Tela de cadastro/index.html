@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tela de cadastro</title>
+    <script src="https://kit.fontawesome.com/026377f157.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="estilo.css" media="screen" />
+</head>
+
+
+    <header>
+
+        <div>
+            <h1>LOGO DO SITE</h1>
+        </div>
+
+        <form action="#" method="post">
+            <input type="text" name="search" id="search" placeholder="Faça sua Busca" required>
+            <button type="submit"><i class="fas fa-search"></i></button>
+            <i class="fa-solid fa-cart-plus"></i>
+            <button>Cadastro/login</button>
+            <i class="fa-solid fa-user"></i>
+        </form>
+
+    </header>
+
+    <body>
+            <div>
+                <h1> Cadastre-se</h1>
+            </div>
+
+                      <!--- Campo de Nome -->
+         <div>
+                <fieldset class="nome">
+                    <div>
+                        <label>Nome Completo</label>
+                        <input type="text" nome="nome" id="nome">
+                    </div>
+                </fieldset>
+                          <br>
+                <!--- Campo de CPF -->
+                <div class="cpf">
+                    <input placeholder="Digite seu CPF:"><input type="submit" value="Verificar">
+                    <form name="cadastro">
+                    </form>
+                </div>
+
+                        <br>
+                <!--- Campo de CEP -->      
+                <div class="cep"> 
+                    <form action="#" onsubmit="return false">
+                    CEP: <input type="text" id="cep" maxlength="9" placeholder="13483-000" autofocus><br><br>
+                    Cidade: <input type="text" id="cidade"> 
+                    UF: <input type="text" id="uf">
+                    complemento:<input typr="text" id="complemento"><br>
+                    Endereço: <input type="text" id="endereco"><br>
+                    Bairro: <input type="text" id="bairro"><br>
+
+                    </div>
+            
+                    <br>
+
+            <!--- Campo de Email -->
+            <div class="campo">
+                <label>Email</label>
+                <input type="email" nome="email" id="email">
+            </div>
+         </div>
+
+            <button>Comfirmar</button>
+          
+            <br>
+            <br>
+
+            <button> Já é cliente? Login</button>
+
+
+
+
+    </body>
