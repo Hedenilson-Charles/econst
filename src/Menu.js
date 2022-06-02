@@ -23,7 +23,7 @@ const Menu = () => {
                 </form>
             </div>
 
-            <div>
+            <div className="CoresEborda">
                 <Link to={'/carrinho'}>carrinho</Link>
                 <Link to={'/cadastro'}>cadastro</Link>
                 <Link to={'/login'}>Login</Link>
