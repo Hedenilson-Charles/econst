@@ -1,6 +1,6 @@
 .Menu {
     display: flex;
     justify-content: space-between;
-    background: red;
-    padding: 20px;
+    background: rgb(38, 39, 73);
+    padding: 55px;
 }
