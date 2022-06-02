@@ -19,8 +19,17 @@ const Menu = () => {
 
             <div>
                 <form>
-                    <input></input><button>Pesquisar</button>
+
+                    <input placeholder="Este é um placeholder"/>
+                    <Link to={'/pesquisa'}>
+                    <button>Pesquisar</button>
+                    </Link>
+                    
                 </form>
+            </div>
+
+            <div>
+                <Link to={'/teste'}>TESTE</Link>
             </div>
 
             <div className="CoresEborda">

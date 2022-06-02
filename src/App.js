@@ -9,6 +9,7 @@ import { Routes, Route } from "react-router-dom";
 import Produto from "./Produto";
 import Pesquisa from "./Pesquisa";
 import Carrinho from "./Carrinho";
+import Teste from "./Teste";
 
 const App = () => {
 
@@ -20,6 +21,7 @@ const App = () => {
       
 
       <Routes>
+        <Route path="/teste" element={<Teste/>}/>
         <Route path="/" element={<Inicio/>} />
         <Route path="/usuario" element={<Usuario/>}/>
         <Route path="/cadastro" element={<Cadastro/>}/>
