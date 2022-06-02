@@ -1,4 +1,7 @@
 .Rodape {
-    background: rgb(245, 255, 245);
+    background: rgb(11, 139, 139);
     height: 80px;
+    bottom:0;
+    position : fixed;
+
 }
