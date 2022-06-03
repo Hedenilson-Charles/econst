@@ -22,7 +22,7 @@ const Menu = () => {
 
                     <input placeholder="Este é um placeholder"/>
                     <Link to={'/pesquisa'}>
-                    <button>Pesquisar</button>
+                    <button>buscar</button>
                     </Link>
                     
                 </form>

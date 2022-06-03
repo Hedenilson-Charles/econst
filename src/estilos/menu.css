@@ -1,7 +1,7 @@
 .Menu {
     display: flex;
     justify-content: space-between;
-    background: rgb(255, 243, 68);
+    background: rgb(156, 75, 122);
     padding: 10px;
     
 }
@@ -17,4 +17,8 @@
 
 .Menu img {
 height: 100px;
+}
+
+.Menu button{
+    border-radius: 10px;
 }
