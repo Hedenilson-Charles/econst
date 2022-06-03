@@ -12,7 +12,7 @@ const Menu = () => {
             <div className="Logo">
 
                 <Link to={'/'}>
-                   <img src="#"/>
+                   <img src="https://i.imgur.com/9IxXQHv.png"/>
                 </Link>
                 
             </div>

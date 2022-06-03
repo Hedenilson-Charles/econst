@@ -1,7 +1,20 @@
 .Menu {
     display: flex;
     justify-content: space-between;
-    background: rgb(38, 39, 73);
-    padding: 55px;
+    background: rgb(255, 243, 68);
+    padding: 10px;
+    
 }
 
+.editar1{
+    list-style-type: none;
+    border: 1px solid #000000;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgb(183, 222, 224);
+    
+}
+
+.Menu img {
+height: 100px;
+}
