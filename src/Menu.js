@@ -12,7 +12,7 @@ const Menu = () => {
             <div className="Logo">
 
                 <Link to={'/'}>
-                   <img src="https://i.imgur.com/9IxXQHv.png"/>
+                   <img src="https://i.imgur.com/HAA9XbR.png"/>
                 </Link>
                 
             </div>
@@ -32,11 +32,11 @@ const Menu = () => {
                 <Link to={'/teste'}>TESTE</Link>
             </div>
 
-            <div className="CoresEborda">
-                <Link to={'/carrinho'}>carrinho</Link>
-                <Link to={'/cadastro'}>cadastro</Link>
-                <Link to={'/login'}>Login</Link>
-                <Link to={'/usuario'}>usuario</Link>
+            <div>
+                <Link to={'/carrinho'} className="editar1"> 🛒</Link>
+                <Link to={'/cadastro'}className="editar1">cadastro</Link>
+                <Link to={'/login'}className="editar1">Login</Link>
+                <Link to={'/usuario'}className="editar1">usuario</Link>
             </div>
             
 
