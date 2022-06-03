@@ -6,6 +6,7 @@ const Usuario = () => {
     return(
         <div>
             <p>tela de usuario</p>
+         
         </div>
     );
 }
