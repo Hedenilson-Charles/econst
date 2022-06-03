@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 const Cadastro = () => {
     return ( 
         <div>
+            <p>Tela de cadastro</p>
         </div>
      );
 }

@@ -22,7 +22,9 @@ const Login = () => {
                 <br/>
                 <Button variant="outline-primary">Login</Button>{''}
                 <br/>
+                <Link to={'/cadastro'}>
                 <Button variant="outline-primary">Não possui conta? Cadastrar</Button>{''}
+                </Link>
             </div>
         </div>
      );
