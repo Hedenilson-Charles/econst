@@ -20,20 +20,21 @@ const Menu = () => {
             <div>
                 <form>
 
-                    <input placeholder="Le placeholder"/>
+                    <input placeholder="Insira um produto de interesse..."/>
                     <Link to={'/pesquisa'}>
                     <button>buscar</button>
                     </Link>
+                    <Link to={'/carrinho'} className="icone"> <img src="https://i.imgur.com/aKCd3IU.png"/> </Link>
                     
                 </form>
             </div>
 
-            <div>
+            <div className="Teste">
                 <Link to={'/teste'}>TESTE</Link>
             </div>
 
             <div>
-                <Link to={'/carrinho'} className="editar1"> 🛒</Link>
+                
                 <Link to={'/cadastro'}className="editar1">Le cadastro</Link>
                 <Link to={'/login'}className="editar1">Le Login</Link>
                 <Link to={'/usuario'}className="editar1">Le usuario</Link>

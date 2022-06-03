@@ -10,10 +10,6 @@ const Login = () => {
     return ( 
         <div className="Login">
             <div>
-            <>
-            
-               
-                </>
                 <h2> Login</h2>
                 <br/>
                 <input placeholder = "Insira seu e-mail..."/>
