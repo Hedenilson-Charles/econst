@@ -1,8 +1,23 @@
-.login{
+.Login{
 
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: red;
     
-    
+}
 
+.Login button {
+    color: rgb(0, 0, 0);
+    background-color: darkorchid;
+    margin: 10px;
+    border-radius: 10px;
+   
+
+}
+
+.Login input {
+    margin: 10px;
 }
    
 
