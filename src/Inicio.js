@@ -35,6 +35,7 @@ const Inicio = () => {
             </Link>
 
             </div>
+            
         </div>
      );
 }
