@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import Button from 'react-bootstrap/Button';
+
 const Login = () => {
 
     require('./estilos/login.css');
@@ -8,16 +10,19 @@ const Login = () => {
     return ( 
         <div className="Login">
             <div>
-                <p>Tela de login</p>
+            <>
+            
+               
+                </>
                 <h2> Login</h2>
                 <br/>
                 <input placeholder = "Email..."/>
                 <br/>
                 <input placeholder = "Senha..."/>
                 <br/>
-                <button>Login</button>
+                <Button variant="outline-primary">Login</Button>{''}
                 <br/>
-                <button>Não possui conta? Cadastrar</button>
+                <Button variant="outline-primary">Não possui conta? Cadastrar</Button>{''}
             </div>
         </div>
      );
