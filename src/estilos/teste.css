@@ -1,0 +1,12 @@
+.carousel-inner > .carousel-item > img {
+    width: 700px;
+    height: 50em; 
+  }
+
+.Carousel h2 {
+    color: orangered;
+}
+
+.Carousel p {
+    color: white;
+}

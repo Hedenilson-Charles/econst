@@ -19,15 +19,24 @@ const Menu = () => {
 
             <div>
                 <form>
-                    <input></input><button>Pesquisar</button>
+
+                    <input placeholder="Este é um placeholder"/>
+                    <Link to={'/pesquisa'}>
+                    <button>Pesquisar</button>
+                    </Link>
+                    
                 </form>
             </div>
 
             <div>
-                <Link to={'/carrinho'} className="editar1">carrinho</Link>
-                <Link to={'/cadastro'} className="editar1">cadastro</Link>
-                <Link to={'/login'} className="editar1">Login</Link>
-                <Link to={'/usuario'} className="editar1">usuario</Link>
+                <Link to={'/teste'}>TESTE</Link>
+            </div>
+
+            <div className="CoresEborda">
+                <Link to={'/carrinho'}>carrinho</Link>
+                <Link to={'/cadastro'}>cadastro</Link>
+                <Link to={'/login'}>Login</Link>
+                <Link to={'/usuario'}>usuario</Link>
             </div>
             
 
