@@ -2,7 +2,6 @@
     background: rgb(243, 69, 156);
     height: 80px;
     bottom:0;
-    position : fixed;
+    left: 0;
     width: 100%;
-
 }

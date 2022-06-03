@@ -3,7 +3,11 @@
     justify-content: space-between;
     background: rgb(255, 243, 68);
     padding: 10px;
-    
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 130px;
+    align-items: center;
 }
 
 .editar1{
