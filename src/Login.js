@@ -16,9 +16,9 @@ const Login = () => {
                 </>
                 <h2> Login</h2>
                 <br/>
-                <input placeholder = "Email..."/>
+                <input placeholder = "Insira seu e-mail..."/>
                 <br/>
-                <input placeholder = "Senha..."/>
+                <input placeholder = "Insira sua senha..."/>
                 <br/>
                 <Button variant="outline-primary">Login</Button>{''}
                 <br/>

@@ -8,7 +8,7 @@ const Inicio = () => {
         <div className="Inicio">
             <div className="CardProduto">
 
-            <Link to={'/produto'}>
+            <Link className="Link" to={'/produto'}>
                 <p>Texto Exemplo</p>
                 <p>Preço Qualquer</p>
                 <img className="Imagem" src="https://previews.123rf.com/images/aquir/aquir1311/aquir131100316/23569861-sample-grunge-red-round-stamp.jpg"/>
@@ -18,7 +18,7 @@ const Inicio = () => {
 
             <div className="CardProduto">
 
-            <Link to={'/produto'}>
+            <Link className="Link" to={'/produto'}>
                 <p>Texto Exemplo</p>
                 <p>Preço Qualquer</p>
                 <img className="Imagem" src="https://previews.123rf.com/images/aquir/aquir1311/aquir131100316/23569861-sample-grunge-red-round-stamp.jpg"/>
@@ -28,7 +28,7 @@ const Inicio = () => {
 
             <div className="CardProduto">
 
-            <Link to={'/produto'}>
+            <Link className="Link" to={'/produto'}>
                 <p>Texto Exemplo</p>
                 <p>Preço Qualquer</p>
                 <img className="Imagem" src="https://previews.123rf.com/images/aquir/aquir1311/aquir131100316/23569861-sample-grunge-red-round-stamp.jpg"/>
