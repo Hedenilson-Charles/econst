@@ -35,9 +35,9 @@ const Menu = () => {
 
             <div>
                 
-                <Link to={'/cadastro'}className="editar1">Le cadastro</Link>
-                <Link to={'/login'}className="editar1">Le Login</Link>
-                <Link to={'/usuario'}className="editar1">Le usuario</Link>
+                <Link to={'/cadastro'}className="editar1">Cadastrar</Link>
+                <Link to={'/login'}className="editar1">Login</Link>
+                <Link to={'/usuario'}className="icone"><img src="https://i.imgur.com/ecjAjrL.png"/></Link>
             </div>
             
 
