@@ -18,9 +18,12 @@ const Login = () => {
                 <br/>
                 <Button variant="outline-primary">Login</Button>{''}
                 <br/>
+
+                <Button variant="outline-primary">Não possui conta? Cadastro</Button>{''}
                 <Link to={'/cadastro'}>
                 <Button variant="outline-primary">Não possui conta? Cadastrar</Button>{''}
                 </Link>
+
             </div>
         </div>
      );
