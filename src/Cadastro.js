@@ -3,22 +3,17 @@ import { Link } from "react-router-dom";
 
 const Cadastro = () => {
     return ( 
-        <div className="Login">
-        <div>
 
-            <h2> Cadastrar</h2>
-            <h3> Insira seu dados:</h3>
-            <br/>
-            <input placeholder = "Nome..."/>
-            <br/>
-            <input placeholder = "CPF"/>
-            <br/>
-            <input placeholder = "CEP"/>
-            <br/>
-            
-
+         <div className="Login">
+            <div>
+                <h2> Login</h2>
+                <br/>
+                <input placeholder = "Nome..."/>
+                <br/>
+                <input placeholder = "Insira sua senha..."/>
+                <br/>
+            </div>
         </div>
-    </div>
      );
 }
  
