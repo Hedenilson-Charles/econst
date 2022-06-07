@@ -1,5 +1,4 @@
 .Login{
-
     display: flex;
     text-align: center;
     justify-content: center;
@@ -17,6 +16,9 @@
     margin-right: auto;
     margin-top: auto;
     margin-bottom: auto;
+    margin: auto;
+   
+    
 }
 
 .Login button {
@@ -30,6 +32,8 @@
 
 .Login input {
     margin: 10px;
+    border-radius: 1px;
+  
 }
    
 
