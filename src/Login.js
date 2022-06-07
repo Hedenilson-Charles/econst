@@ -22,7 +22,7 @@ const Login = () => {
                 <br/>
                 <Button variant="outline-primary">Login</Button>{''}
                 <br/>
-                <Button variant="outline-primary">Não possui conta? Cadastrar</Button>{''}
+                <Button variant="outline-primary">Não possui conta? Cadastro</Button>{''}
             </div>
         </div>
      );

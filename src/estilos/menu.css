@@ -1,7 +1,7 @@
 .Menu {
     display: flex;
     justify-content: space-between;
-    background-image: linear-gradient(to top, #c4b81c, #867902 );
+    background-image: linear-gradient(to top, #1cc4a8, #027d86 );
     padding: 10px;
     position: fixed;
     width: 100%;
