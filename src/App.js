@@ -31,7 +31,6 @@ const App = () => {
         <Route path="/carrinho" element={<Carrinho/>}/>
       </Routes>
 
-    <Rodape/>
     </div>
   );
 }

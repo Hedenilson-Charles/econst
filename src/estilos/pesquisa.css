@@ -1,6 +1,6 @@
 .Resultado {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     border-radius: 5px;
     box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
@@ -14,10 +14,20 @@
 
 .Resultado img {
     width: 30%;
+    text-decoration: none;
 }
 
 .Pesquisa {
     display: flex;
     justify-content: space-evenly;
+}
+
+.Link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.Link button {
+    border: 1px solid gray;
 }
 

@@ -6,7 +6,7 @@
     position: fixed;
     width: 100%;
     top: 0;
-    height: 130px;
+    height: 100px;
     align-items: center;
 }
 
@@ -20,10 +20,25 @@
 }
 
 .Menu img {
-height: 300px;
-border-radius: 10px;
+height: 250px;
 }
 
 .Menu button{
     border-radius: 10px;
+}
+
+.icone {
+    text-decoration: none;
+}
+
+.icone img {
+    height: 30px;
+}
+
+input{
+    width:500px
+}
+
+.Teste {
+    display: none;
 }
