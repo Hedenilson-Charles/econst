@@ -22,7 +22,7 @@ const Menu = () => {
 
                     <input placeholder="Insira um produto de interesse..."/>
                     <Link to={'/pesquisa'}>
-                    <button>buscar</button>
+                    <button>Buscar</button>
                     </Link>
                     <Link to={'/carrinho'} className="icone"> <img src="https://i.imgur.com/aKCd3IU.png"/> </Link>
                     

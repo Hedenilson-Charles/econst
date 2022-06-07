@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Carrinho = () => {
     return(
         <div>
-            <p>D</p>
+            <p>Tela do carrinho</p>
         </div>
     );
 }
