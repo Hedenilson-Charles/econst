@@ -12,10 +12,11 @@
 
 .editar1{
     list-style-type: none;
-    border: 1px solid #000000;
+    border: none;
     padding: 10px;
     border-radius: 10px;
-    background: rgb(183, 222, 224);
+    background: rgb(222, 224, 195);
+    margin: 10px;
     
 }
 
@@ -25,5 +26,6 @@ border-radius: 10px;
 }
 
 .Menu button{
-    border-radius: 10px;
+    border: none;
+    border-radius: 10px
 }
