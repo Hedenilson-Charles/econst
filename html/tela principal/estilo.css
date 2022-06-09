@@ -3,4 +3,11 @@ header {
     align-items:center;
     justify-content: space-around;
 }
-
+footer{
+    background-color: rgb(102, 94, 94);
+    width: 2500px;
+    height: 80px;
+    padding-top: 60px;
+    border-radius: 3px;
+    color: white;
+}
