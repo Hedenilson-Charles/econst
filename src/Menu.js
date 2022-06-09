@@ -17,9 +17,12 @@ const Menu = () => {
                 
             </div>
 
-            <div>
+            <div className="Pesquisa">
                 <form>
 
+                    <input placeholder="Este é um placeholder"/ >
+                    <Link to={'/pesquisa'} >
+                    <button>buscar</button>
                     <input placeholder="Insira um produto de interesse..."/>
                     <Link to={'/pesquisa'}>
                     <button>Buscar</button>
@@ -34,6 +37,8 @@ const Menu = () => {
             </div>
 
             <div>
+                <Link to={'/carrinho'}className="editar1"> 🛒</Link>
+                <Link to={'/cadastro'}className="editar1">cadastro</Link>
                 
                 <Link to={'/cadastro'}className="editar1">Cadastrar</Link>
                 <Link to={'/login'}className="editar1">Login</Link>

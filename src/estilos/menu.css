@@ -11,6 +11,12 @@
 }
 
 .editar1{
+    list-style-type: none;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgb(222, 224, 195);
+    margin: 10px;
     text-decoration: none;
     font-size: 20px;
     color: white;
@@ -24,6 +30,10 @@
 height: 250px;
 }
 
+.Menu button{
+    border: none;
+    border-radius: 10px
+}
 .Menu input {
 
     height: 40px;
