@@ -1,19 +1,24 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Cadastro from"./Cadastro.css";
+
 
 
 
 const Cadastro = () => {
 
-    return ( 
+    require('./estilos/cadastro.css');
+
+    return(
 
          <div>
             <div className="inicio">
+
                 <h2>Cadastro</h2>
                 <h3>Insira seus dados abaixo:</h3>
                 <br/>
-            <div/>
+
+
+            </div>
 
             <div className="Cadastro">
                 <input placeholder = "Nome..."/>
@@ -36,6 +41,8 @@ const Cadastro = () => {
                 <input placeholder = "CPF"/>
                 <br/>
 
+                </div>
+
                     <div className="Botões">
 
                         <button>Confirmar</button>
@@ -44,12 +51,11 @@ const Cadastro = () => {
 
                     </div>
 
-                </div>
+                
 
-            </div>
 
         </div>
-     );
+     )
 }
  
 export default Cadastro;                                
