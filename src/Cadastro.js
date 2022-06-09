@@ -45,9 +45,10 @@ const Cadastro = () => {
 
                     <div className="Botões">
 
-                        <button>Confirmar</button>
+                        <button className="Botões3">Confirmar</button>
                         <br/>
-                        <button>Já é cliente? Fazer login</button>
+                        
+                        <button className="Botões2">Já é cliente? Fazer login</button>
 
                     </div>
 
