@@ -19,10 +19,7 @@ const Menu = () => {
 
             <div className="Pesquisa">
                 <form>
-
-                    <input placeholder="Este é um placeholder"/ >
-                    <Link to={'/pesquisa'} >
-                    <button>buscar</button>
+                    
                     <input placeholder="Insira um produto de interesse..."/>
                     <Link to={'/pesquisa'}>
                     <button>Buscar</button>
