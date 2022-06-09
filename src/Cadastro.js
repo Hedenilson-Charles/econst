@@ -6,8 +6,6 @@ import Cadastro from"./Cadastro.css";
 
 const Cadastro = () => {
 
-
-    require('./estilos/cadastro.css');
     return ( 
 
          <div>
