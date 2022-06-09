@@ -1,0 +1,41 @@
+header{
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+}
+
+.nome{
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    
+}
+div{
+    width: 150px;
+    height: 200px;
+    display: inline-block;
+    padding: 50px;
+    color: white;
+    margin-top: 50px;
+    margin-right: -390px;
+    margin-left: 390px ;
+    
+}
+#container-a{
+    background-color: rgb(102, 94, 94);
+}
+#container-b{
+    background-color: rgb(178, 178, 194);
+}
+
+footer{
+    background-color: rgb(102, 94, 94);
+    width: 2500px;
+    height: 80px;
+    padding-top: 80px;
+    border-radius: 3px;
+    color: white;
+    
+}
+
+
