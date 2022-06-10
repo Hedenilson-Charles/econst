@@ -39,10 +39,10 @@
     color: black;
     border: 50px;
     background-color: rgb(255, 255, 255);
-    margin: 10px;
-    border-radius: 10px;
+    margin:10px;
+    border-color: blue;
+    border-radius: 15px;
+    text-align: center;
 
-
-   
 }
 
