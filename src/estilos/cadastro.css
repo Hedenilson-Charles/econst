@@ -10,14 +10,51 @@
 
 
 .Cadastro{
-    text-align: center;
+ background: #f1f2f3;
+ width: 800px;
+ margin: auto;
+ padding: 100px 140px ;
 }
 
 .Cadastro input{
     border-radius: 10px;
    padding: 10px;
    margin: 5px;
+   width: 98%;
+   text-align: center;
 }
+
+.CPF{
+    /* width: 280PX; */
+
+}
+
+.CEP{
+    /* width: 210px; */
+}
+
+.CIDADE{
+    width: 38% !important;
+}
+
+.UF{
+ width: 20% !important;
+}
+
+.COMPLEMENTO{
+    width: 36% !important;
+}
+
+.SENHA{
+    width: 48% !important;
+}
+
+.CONFIRMAR{
+    width: 47% !important;
+}
+
+
+
 
 .Botões{
     text-align: center;

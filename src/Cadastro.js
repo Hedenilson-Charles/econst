@@ -21,27 +21,26 @@ const Cadastro = () => {
             </div>
 
             <div className="Cadastro">
-                <input placeholder = "Nome..."/>
+                
+                <input placeholder = "Nome..." />
                 <br/>
-                <input placeholder = "CPF"/>
+                <input placeholder = "CPF" className="CPF"/>
                 <br/>
-                <input placeholder = "CPF"/>
+                <input placeholder = "CEP" className="CEP"/>
                 <br/>
-                <input placeholder = "CPF"/>
+                <input placeholder = "CIDADE" className="CIDADE"/>
+                <input placeholder = "UF" className="UF"/>
+                <input placeholder = "COMPLEMENTO" className="COMPLEMENTO"/>
                 <br/>
-                <input placeholder = "CPF"/>
-                <input placeholder = "CPF"/>
-                <input placeholder = "CPF"/>
+                <input placeholder = "ENDEREÇO"/>
                 <br/>
-                <input placeholder = "CPF"/>
+                <input placeholder = "E-MAIL"/>
                 <br/>
-                <input placeholder = "CPF"/>
-                <br/>
-                <input placeholder = "CPF"/>
-                <input placeholder = "CPF"/>
+                <input placeholder = "SENHA" className="SENHA"/>
+                <input placeholder = "CONFIRMAR SENHA" className="CONFIRMAR"/>
                 <br/>
 
-                </div>
+            </div>
 
                     <div className="Botões">
 
