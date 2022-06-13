@@ -34,7 +34,6 @@ const Menu = () => {
             </div>
 
             <div>
-                <Link to={'/carrinho'}className="editar1"> 🛒</Link>
                 <Link to={'/cadastro'}className="editar1">cadastro</Link>
                 
                 <Link to={'/cadastro'}className="editar1">Cadastrar</Link>
