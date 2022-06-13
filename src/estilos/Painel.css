@@ -1,0 +1,48 @@
+.Painel{
+    padding: 50px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(110, 124, 124);
+    border-radius: 10px;
+    width: 700px;
+    display: inline-block;
+   
+}
+ 
+ .Painel img{
+     width: 250px;
+  
+ }
+
+.Painel button {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+    border-radius: 10px;
+
+}
+
+.Painel img{
+    border-radius: 650px;
+}
+    
+.Painel input{
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+    font-size: 20px;
+    
+
+}
+   
+.Painel h3{
+    color: black;
+    border: 50px;
+    background-color: rgb(255, 255, 255);
+    margin:10px;
+    border-color: blue;
+    border-radius: 15px;
+    text-align: center;
+
+}
+

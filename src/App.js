@@ -10,6 +10,7 @@ import Produto from "./Produto";
 import Pesquisa from "./Pesquisa";
 import Carrinho from "./Carrinho";
 import Teste from "./Teste";
+import Painel from "./Painel";
 
 const App = () => {
 
@@ -29,6 +30,7 @@ const App = () => {
         <Route path="/produto" element={<Produto/>}/>
         <Route path="/pesquisa" element={<Pesquisa/>}/>
         <Route path="/carrinho" element={<Carrinho/>}/>
+        <Route path="/painel" element={<Painel/>}/>
       </Routes>
 
     </div>

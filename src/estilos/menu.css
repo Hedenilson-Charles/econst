@@ -1,13 +1,14 @@
 .Menu {
     display: flex;
     justify-content: space-between;
-    background-image: linear-gradient(to top, #f3951a, #f1b23c );
+    background-image: linear-gradient(rgb(245, 151, 63), #e09018);
     padding: 10px;
     position: fixed;
     width: 100%;
     top: 0;
     height: 100px;
     align-items: center;
+    z-index: 1;
 }
 
 .editar1{
@@ -32,30 +33,31 @@ height: 250px;
 
 .Menu button{
     border: none;
-    border-radius: 10px
 }
 .Menu input {
 
     height: 40px;
     border: orange;
     border-right: none;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
 
 }
 .Menu button{
 
     height: 40px;
+    width: 100px;
     border: orange;
     border-left: none;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
     background-color: rgb(245, 131, 25);
     color: white;
 }
 
 .Menu button:hover {
-    background-color: #f3951a;
+    background-color: #FFE0B2;
+    color: #FF9800;
 }
 .icone {
     text-decoration: none;

@@ -36,8 +36,8 @@ const Cadastro = () => {
                 <br/>
                 <input placeholder = "E-MAIL"/>
                 <br/>
-                <input placeholder = "SENHA" className="SENHA"/>
-                <input placeholder = "CONFIRMAR SENHA" className="CONFIRMAR"/>
+                <input type ="password" placeholder = "SENHA" className="SENHA"/>
+                <input type = "password" placeholder = "CONFIRMAR SENHA" className="CONFIRMAR"/>
                 <br/>
 
             </div>
