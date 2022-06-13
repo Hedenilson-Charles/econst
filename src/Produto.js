@@ -16,11 +16,11 @@ const Produto = () => {
             <br/>
             <p> <b>Quantidade:</b> 100 </p>
 
-            <div>
+            <div className="BlocoBotao">
 
-            <button>Comprar agora</button>
+            <button className="Botão2">Comprar agora</button>
             <br/>
-            <button>Adicionar ao Carrinho</button>
+            <button className="Botão">Adicionar ao Carrinho</button>
 
             </div>
 

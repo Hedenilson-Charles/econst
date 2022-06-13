@@ -1,6 +1,38 @@
 .informacao{
     background: #f1f2f3;
- width: 800px;
- padding: 100px 140px ;
- margin-left: 1000px;
+ width: 450px;
+ padding: 100px 110px ;
+ margin-left: 1300px;
+border-radius: 50px;
+height: 590px;
+background: #fffcf8;
 }
+
+.Botão2{
+border-radius: 10px;
+height: 45px;
+margin: 5px;
+border: none;
+background-image: linear-gradient(rgb(245, 151, 63), #e09018);
+color: rgb(236, 231, 223);
+margin-left: 60px;
+
+}
+
+.informacao button:hover {
+    border-radius: 20px;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.Botão{
+    border-radius: 10px;
+height: 40px;
+margin: 8px; 
+border: none;
+background-image: linear-gradient(rgb(245, 151, 63), #e09018);
+color: rgb(236, 231, 223);
+margin-left: 40px;
+}
+
+
