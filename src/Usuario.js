@@ -11,6 +11,7 @@ const Usuario = () => {
                 <img src="https://i.imgur.com/HAA9XbR.png"/>
                 <p><b>Endereço:</b> Rua Fulano de X número X</p>
                 <p><b>E-mail:</b> fulanodasilva@gmail.com</p>
+                <p><b>CPF:</b> XXX-XXX-XXXX </p>
             </div>
             <div className="BlocoDireito">
                 <img src="https://cdn.onlinewebfonts.com/svg/img_184513.png"/>

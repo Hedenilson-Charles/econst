@@ -44,10 +44,13 @@ const Cadastro = () => {
 
                     <div className="Botões">
 
+                        <Link to="/">
                         <button className="Botões3">Confirmar</button>
+                        </Link>
                         <br/>
-                        
+                        <Link to="/login">
                         <button className="Botões2">Já é cliente? Fazer login</button>
+                        </Link>
 
                     </div>
 

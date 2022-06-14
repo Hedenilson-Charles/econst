@@ -12,6 +12,7 @@ import Carrinho from "./Carrinho";
 import Teste from "./Teste";
 import Painel from "./Painel";
 
+
 const App = () => {
 
   require('./estilos/app.css');
@@ -32,6 +33,8 @@ const App = () => {
         <Route path="/carrinho" element={<Carrinho/>}/>
         <Route path="/painel" element={<Painel/>}/>
       </Routes>
+
+<Rodape/>
 
     </div>
   );
