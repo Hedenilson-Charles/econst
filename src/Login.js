@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import Button from 'react-bootstrap/Button';
 
 const Login = () => {
 
@@ -11,18 +10,17 @@ const Login = () => {
         <div className="Login">
             <div>
                 <h2> Login</h2>
-                <br/>
                 <input placeholder = "Insira seu e-mail..."/>
                 <br/>
-                <input placeholder = "Insira sua senha..."/>
+                <input type="password" placeholder = "Insira sua senha..."/>
                 <br/>
                 <Link to="/">
-                <Button variant="outline-primary">Login</Button>{''}
+                <button>Login</button>{''}
                 </Link>
                 <br/>
 
                 <Link to={'/cadastro'}>
-                <Button variant="outline-primary">Não possui conta? Cadastrar</Button>{''}
+                <button>Não possui conta? Cadastrar</button>{''}
                 </Link>
 
             </div>

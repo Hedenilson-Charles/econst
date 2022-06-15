@@ -7,6 +7,9 @@ const Usuario = () => {
 
     return(
         <div className="Usuario">
+
+
+            {/* Abaixo bloco com layout pro usuario padrão */}
             <div className="BlocoEsquerdo">
                 <img src="https://i.imgur.com/HAA9XbR.png"/>
                 <p><b>Endereço:</b> Rua Fulano de X número X</p>
@@ -16,8 +19,6 @@ const Usuario = () => {
             <div className="BlocoDireito">
                 <img src="https://cdn.onlinewebfonts.com/svg/img_184513.png"/>
                 <p>Fulano da Silva</p>
-            
-            
             </div>
          
         </div>
