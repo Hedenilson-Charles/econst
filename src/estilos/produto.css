@@ -1,9 +1,12 @@
 
 .informacao{
+}
+
+.Geral{
     background: #f1f2f3;
+    
  width: 450px;
  padding: 100px 110px ;
- margin-left: 1300px;
 border-radius: 50px;
 height: 590px;
 background: #fffcf8;
@@ -35,5 +38,18 @@ background-image: linear-gradient(rgb(245, 151, 63), #e09018);
 color: rgb(236, 231, 223);
 margin-left: 40px;
 }
+
+.BlocoImagem img{
+ height: 600px;
+padding: 20px 50px;
+margin-left: 580px;
+
+}
+
+.Produto {
+    display: flex;
+    justify-content: space-around;
+}
+
 
 
