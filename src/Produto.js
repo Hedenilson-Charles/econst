@@ -6,6 +6,15 @@ const Produto = () => {
 
     return(
         <div className="Produto">
+
+            <div className="BlocoImagem1">
+
+                <img alt="Imagem"  src="https://previews.123rf.com/images/aquir/aquir1311/aquir131100316/23569861-sample-grunge-red-round-stamp.jpg"/>
+                <img alt="Imagem" src="https://previews.123rf.com/images/aquir/aquir1311/aquir131100316/23569861-sample-grunge-red-round-stamp.jpg"/>
+                <img alt="Imagem" src="https://previews.123rf.com/images/aquir/aquir1311/aquir131100316/23569861-sample-grunge-red-round-stamp.jpg"/>
+
+
+            </div>
             
             <div className="BlocoImagem">
 
@@ -27,6 +36,9 @@ const Produto = () => {
                 <br/>
                 <button className="Botão">Adicionar ao Carrinho</button>
             </div>
+
+            
+
 
             </div>
         </div>
