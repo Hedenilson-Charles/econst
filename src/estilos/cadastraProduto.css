@@ -1,0 +1,16 @@
+.ContainerCP {
+    width: 600px;
+    background-color: red;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.PreviaImagem {
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(209, 209, 209);
+    border: 3px solid rgb(117, 116, 116);
+}
+

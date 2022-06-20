@@ -19,6 +19,9 @@ const Usuario = () => {
             <div className="BlocoDireito">
                 <img src="https://cdn.onlinewebfonts.com/svg/img_184513.png"/>
                 <p>Fulano da Silva</p>
+                <Link to="/cadastraProduto">
+                    <button>Cadastra Produto</button>
+                </Link>
             </div>
          
         </div>
