@@ -1,40 +1,17 @@
 .Login{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-
-    background-color: rgb(162, 117, 235);
-
-    vertical-align: center;
-    background-color: rgb(255, 255, 255);
-
-    width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin: auto;
-   
-    
-}
-
-.Login button {
-    color: rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
-    margin: 10px;
-    border-radius: 10px;
-   
-
-}
-
-.Login input{
-   border-radius: 10px;
-   padding: 10px;
-   margin: 5px;
-   width: 98%;
    text-align: center;
 }
-   
 
+.ContainerLogin {
 
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    background: red;
+    width: 600px;
+    height: 600px;
+}
  

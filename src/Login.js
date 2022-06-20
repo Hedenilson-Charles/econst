@@ -8,24 +8,19 @@ const Login = () => {
 
     return ( 
         <div className="Login">
-            <div>
-                <h2> Login</h2>
-                <input placeholder = "Insira seu e-mail..."/>
-                <br/>
-                <input type="password" placeholder = "Insira sua senha..."/>
-                <br/>
-                <Link to="/">
-                <button>Login</button>{''}
-                </Link>
-                <br/>
 
-                <Link to={'/cadastro'}>
-                <button>Não possui conta? Cadastrar</button>{''}
-                </Link>
+            <h1>Login</h1>
+            <div className="ContainerLogin">
+            
+            <form>
+                <input placeholder="Insira seu e-mail..."/>
+                <input placeholder="Insira sua senha..."/>
+            </form>
+
 
             </div>
         </div>
      );
 }
  
-export default Login;
+export default Login; 
