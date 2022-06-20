@@ -3,13 +3,13 @@
 }
 
 .Geral{
-    background: #f1f2f3;
-    
+background: #f1f2f3; 
  width: 450px;
- padding: 100px 110px ;
+ padding: 100px 110px;
 border-radius: 50px;
 height: 590px;
-background: #fffcf8;
+background:#f1f2f3; 
+border: 1.5px solid black;
 }
 
 .Botão2{
@@ -40,16 +40,24 @@ margin-left: 40px;
 }
 
 .BlocoImagem img{
- height: 600px;
+ height: 550px;
 padding: 20px 50px;
-margin-left: 580px;
 
+}
+
+.BlocoImagem1 img{
+    display: flex;
+    justify-content: center;
+    height: 170px;
+    margin: 6px;
 }
 
 .Produto {
     display: flex;
     justify-content: space-around;
+    background:#f1f2f3; 
 }
+
 
 
 
