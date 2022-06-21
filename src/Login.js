@@ -21,8 +21,12 @@ const Login = () => {
 
             </div>
             <div className="Botoes">
-                <button className="Botao1">Entrar</button>
-                <button className="Botao2">Cadastre-se</button>
+                <Link to='/'>
+                    <button className="Botao1">Entrar</button>
+                </Link>
+                <Link to='/cadastro'>
+                    <button className="Botao2">Cadastre-se</button>
+                </Link>
             </div>
         </div>
      );
