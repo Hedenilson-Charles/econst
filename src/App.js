@@ -11,6 +11,7 @@ import Pesquisa from "./Pesquisa";
 import Carrinho from "./Carrinho";
 import Teste from "./Teste";
 import Painel from "./Painel";
+import CadastraProduto from "./CadastroProduto";
 
 
 const App = () => {
@@ -32,6 +33,7 @@ const App = () => {
         <Route path="/pesquisa" element={<Pesquisa/>}/>
         <Route path="/carrinho" element={<Carrinho/>}/>
         <Route path="/painel" element={<Painel/>}/>
+        <Route path="/cadastraProduto" element={<CadastraProduto/>}/>
       </Routes>
 
 <Rodape/>

@@ -56,7 +56,7 @@ height: 250px;
 }
 
 .Menu button:hover {
-    background-color: #FFE0B2;
+    background-color: #fdedd5;
     color: #FF9800;
 }
 .icone {
@@ -72,5 +72,5 @@ input{
 }
 
 .Teste {
-    display: none;
+ display: block;
 }
