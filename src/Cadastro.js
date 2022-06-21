@@ -13,8 +13,8 @@ const Cadastro = () => {
          <div>
             <div className="inicio">
 
-                <h2>Cadastro</h2>
-                <h3>Insira seus dados abaixo:</h3>
+                <h1>Cadastro</h1>
+                <h2>Insira seus dados abaixo:</h2>
                 <br/>
 
 
