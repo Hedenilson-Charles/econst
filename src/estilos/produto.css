@@ -3,12 +3,12 @@
 }
 
 .Geral{
-background: #f1f2f3; 
+
  width: 450px;
  padding: 100px 110px;
 border-radius: 50px;
 height: 590px;
-background:#f1f2f3; 
+background: #ffffff;
 border: 1.5px solid black;
 }
 
@@ -55,7 +55,8 @@ padding: 20px 50px;
 .Produto {
     display: flex;
     justify-content: space-around;
-    background:#f1f2f3; 
+    background:#ffffff;
+
 }
 
 
