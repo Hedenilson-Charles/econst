@@ -9,7 +9,7 @@ const Carrinho = () => {
         <div className='Carrinho'>
         <div className='Container'>
         
-        <h3> eConst.com</h3>
+      
             <Link className="Link" to={'/produto'}>
                     <div className="Resultado">
                     <div className="blocoImagem">
@@ -18,10 +18,15 @@ const Carrinho = () => {
                 <div className='Blocobutton'>    
                     <button> Cancelar</button> 
                 </div>
+
+                <div>    
+                <Link className="Link" to={'/produto'}> </Link>
+                <p> Bala de Gelatina e Marshmallows Dentadura 90g - Fini</p>
+                </div>
                      
                    
                     </div>
-
+                <hr/>
             </Link>
                 
             <Link className="Link" to={'/produto'}>
@@ -34,11 +39,16 @@ const Carrinho = () => {
                 </div>
                 
 
+                <div>    
+                <Link className="Link" to={'/produto'}> </Link>
+                <p> Bala de Gelatina e Marshmallows Dentadura 90g - Fini</p>
+                </div>
+
                      
                     </div>
             </Link>
 
-          
+                <hr/>
             <Link className="Link" to={'/produto'}>
                     <div className="Resultado">
                     <div className="blocoImagem">
@@ -48,9 +58,13 @@ const Carrinho = () => {
                     <button> Cancelar</button> 
                 </div>
                      
-                   
+                <div>    
+                <Link className="Link" to={'/produto'}> </Link>
+                <p> Bala de Gelatina e Marshmallows Dentadura 90g - Fini</p>
+                </div>
+                     
                     </div>
-
+            <hr/>
             </Link>
 
                 </div>
