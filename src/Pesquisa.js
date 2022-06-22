@@ -45,7 +45,7 @@ const Pesquisa = () => {
                                     <Link to='/produto'>
                                         <div className="Resultado">
                                             <div className="BlocoImagem">
-                                                <img src="https://previews.123rf.com/images/aquir/aquir1311/aquir131100316/23569861-sample-grunge-red-round-stamp.jpg"/>
+                                                <img src="https://thumbs.dreamstime.com/b/sample-stamp-white-background-sign-90532936.jpg"/>
                                             </div>
                                             <div className="blocoTextoBotao">
                                                 <h3>{u.nome}</h3>
@@ -56,7 +56,8 @@ const Pesquisa = () => {
                                     
                                 )})
                     )
-                }       
+                }    
+
             </div>
 
         </div>
