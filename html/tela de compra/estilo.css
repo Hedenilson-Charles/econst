@@ -1,0 +1,82 @@
+header {
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+}
+div{
+    display: inline-block;
+    position: absolute;
+    
+}
+.imagem-principal{
+    height:410px;
+    width: 620px;
+    margin-left: 270px;
+    margin-top: -45px;
+
+}
+.dados-produto{
+    height:500px;
+    width: 260px;
+    background-color: blueviolet;
+    margin-left: 1000px;
+    margin-top: -45px;
+    border-radius: 25px;
+}
+.descricao-produto{
+    margin-top: 450px;
+    width: 70%;
+    height: 90px;
+    margin-top: 390px;
+    border-radius: 25px;
+}
+.foto1{
+    width: 100px;
+    height: 90px;
+    margin-top: -22px;
+    position: absolute;
+}
+.foto2{
+    width: 100px;
+    height: 90px;
+    margin-top: 80px;
+    position: absolute;
+}
+.foto3{
+    width: 100px;
+    height: 90px;
+    margin-top: 181px;
+    position: absolute;
+}
+.foto4{
+    width: 100px;
+    height: 90px;
+    margin-top: 280px;
+    position: absolute;
+}
+
+.nome-produto{
+    margin-left: 65px;
+}
+#container-a{
+    background-color: rgb(102, 94, 94);
+}
+#container-b{
+    background-color: rgb(178, 178, 194);
+}
+#container-c{
+    background-color: rgb(225, 225, 248);
+}
+#container-d{
+    background-color: rgb(104, 104, 199);
+}
+#container-e{
+    background-color: rgb(83, 83, 99);
+}
+#container-f{
+    background-color: rgb(21, 21, 51);
+}
+#container-g{
+    background-color: rgb(120, 120, 134);
+}
+
