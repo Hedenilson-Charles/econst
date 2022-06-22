@@ -1,5 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+<<<<<<< Updated upstream
+=======
+import  cadstrofrom  "cadastro.css";
+>>>>>>> Stashed changes
 
 
 
