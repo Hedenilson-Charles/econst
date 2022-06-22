@@ -53,7 +53,7 @@ padding: 20px 50px;
     margin: 6px;
 }
 
-.Produto {
+.Bloco1 {
     display: flex;
     justify-content: space-around;
     background:#eeeeeb;
@@ -65,8 +65,11 @@ padding: 20px 50px;
 
 }
 
-.Descrição{
-    
+.Descricao{
+    text-align: left;
+    margin-left: 23%; 
+    font-size: 20px;
+    font: arial;
 }
 
 
