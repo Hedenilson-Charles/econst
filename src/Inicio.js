@@ -48,7 +48,7 @@ const Inicio = () => {
                                 <div className="CardProduto">
                                     <Link className="Link" to={'/produto'}>
                                         <img className="Imagem" src="https://previews.123rf.com/images/aquir/aquir1311/aquir131100316/23569861-sample-grunge-red-round-stamp.jpg"/>
-                                        <p>{u.nome}</p>
+                                        <p>R${u.nome}</p>
                                         <p>{u.email}</p>
                                     </Link>
                                 </div>
