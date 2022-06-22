@@ -13,42 +13,44 @@ const Cadastro = () => {
          <div>
             <div className="inicio">
 
-                <h2>Cadastro</h2>
-                <h3>Insira seus dados abaixo:</h3>
+                <h1>Cadastro</h1>
+                <h2>Insira seus dados abaixo:</h2>
                 <br/>
 
 
             </div>
 
             <div className="Cadastro">
-                <input placeholder = "Nome..."/>
+                
+                <input placeholder = "Nome..." />
                 <br/>
-                <input placeholder = "CPF"/>
+                <input placeholder = "CPF" className="CPF"/>
                 <br/>
-                <input placeholder = "CPF"/>
+                <input placeholder = "CEP" className="CEP"/>
                 <br/>
-                <input placeholder = "CPF"/>
+                <input placeholder = "CIDADE" className="CIDADE"/>
+                <input placeholder = "UF" className="UF"/>
+                <input placeholder = "COMPLEMENTO" className="COMPLEMENTO"/>
                 <br/>
-                <input placeholder = "CPF"/>
-                <input placeholder = "CPF"/>
-                <input placeholder = "CPF"/>
+                <input placeholder = "ENDEREÇO"/>
                 <br/>
-                <input placeholder = "CPF"/>
+                <input placeholder = "E-MAIL"/>
                 <br/>
-                <input placeholder = "CPF"/>
-                <br/>
-                <input placeholder = "CPF"/>
-                <input placeholder = "CPF"/>
+                <input type ="password" placeholder = "SENHA" className="SENHA"/>
+                <input type = "password" placeholder = "CONFIRMAR SENHA" className="CONFIRMAR"/>
                 <br/>
 
-                </div>
+            </div>
 
                     <div className="Botões">
 
+                        <Link to="/">
                         <button className="Botões3">Confirmar</button>
+                        </Link>
                         <br/>
-                        
+                        <Link to="/login">
                         <button className="Botões2">Já é cliente? Fazer login</button>
+                        </Link>
 
                     </div>
 

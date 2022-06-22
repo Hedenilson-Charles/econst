@@ -1,23 +1,60 @@
-.inicio h2 {
+.inicio h1 {
     text-align: center;
     color: rgb(36, 26, 44);
 }
 
-.inicio h3{
+.inicio h2{
     text-align: center;
     color: rgb(36, 26, 44);
 }
 
 
 .Cadastro{
-    text-align: center;
+ background: #f1f2f3;
+ width: 800px;
+ margin: auto;
+ padding: 50px 120px ;
 }
 
 .Cadastro input{
     border-radius: 10px;
    padding: 10px;
    margin: 5px;
+   width: 98%;
+   text-align: center;
 }
+
+.CPF{
+    /* width: 280PX; */
+
+}
+
+.CEP{
+    /* width: 210px; */
+}
+
+.CIDADE{
+    width: 38% !important;
+}
+
+.UF{
+ width: 20% !important;
+}
+
+.COMPLEMENTO{
+    width: 36% !important;
+}
+
+.SENHA{
+    width: 48% !important;
+}
+
+.CONFIRMAR{
+    width: 47% !important;
+}
+
+
+
 
 .Botões{
     text-align: center;

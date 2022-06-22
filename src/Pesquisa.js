@@ -18,7 +18,7 @@ const Pesquisa = () => {
 
                     <div className="blocoTextoBotao">
                         <p>Texto descricional qualquer usado apenas para ocupar espaço e dessa forma, observar o comportamento do card quando usado com um texto</p>
-                        <button>Le botão</button>
+                        
                     </div>
                 </div>
                 </Link>
@@ -31,7 +31,7 @@ const Pesquisa = () => {
 
                     <div className="blocoTextoBotao">
                         <p>Texto descricional qualquer usado apenas para ocupar espaço e dessa forma, observar o comportamento do card quando usado com um texto</p>
-                        <button>Le botão</button>
+                        
                     </div>
                 </div>
                 </Link>
@@ -44,7 +44,7 @@ const Pesquisa = () => {
 
                     <div className="blocoTextoBotao">
                         <p>Texto descricional qualquer usado apenas para ocupar espaço e dessa forma, observar o comportamento do card quando usado com um texto</p>
-                        <button>Le botão</button>
+                        
                     </div>
                 </div>
                 </Link>
@@ -57,7 +57,7 @@ const Pesquisa = () => {
 
                     <div className="blocoTextoBotao">
                         <p>Texto descricional qualquer usado apenas para ocupar espaço e dessa forma, observar o comportamento do card quando usado com um texto</p>
-                        <button>Le botão</button>
+                        
                     </div>
                 </div>
                 </Link>
@@ -70,7 +70,7 @@ const Pesquisa = () => {
 
                     <div className="blocoTextoBotao">
                         <p>Texto descricional qualquer usado apenas para ocupar espaço e dessa forma, observar o comportamento do card quando usado com um texto</p>
-                        <button>Le botão</button>
+                        
                     </div>
                 </div>
                 </Link>

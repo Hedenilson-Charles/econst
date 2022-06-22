@@ -1,41 +1,40 @@
 .Login{
+   text-align: center;
+}
+
+.ContainerLogin {
+
     display: flex;
-    text-align: center;
-    justify-content: center;
-
-    background-color: rgb(162, 117, 235);
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-
-    vertical-align: center;
-    background-color: rgb(255, 255, 255);
-    border: 1px solid rgb(136, 136, 136);
-
-    width: 600px;
+    flex-direction: column;
+    border-radius: 10px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin: auto;
-   
-    
+    align-items: center;
+    background: #f1f2f3;
+    width: 600px;
+    padding: 80px 120px ;
 }
 
-.Login button {
-    color: rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
-    margin: 10px;
+.ContainerLogin input {
     border-radius: 10px;
-   
-
+    padding: 10px;
+    margin: 5px;
+    width: 98%;
+    text-align: center;
 }
 
-.Login input {
-    margin: 10px;
-    border-radius: 1px;
-  
+.Botoes button {
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 5px;
+    font-size: 20px;
+    text-align: center;
 }
-   
+.Botao1{
+    background-image: linear-gradient(to top, #f3951a, #f1b23c );
+}
 
-
- 
+.Botao2{
+    background-image: linear-gradient(to top, #c7c3bf, #fffbf5 );
+}

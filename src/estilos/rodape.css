@@ -1,8 +1,12 @@
 .Rodape {
-    background: rgb(243, 69, 156);
-    height: 80px;
-    bottom:0;
-    left: 0;
-    width: 100%;
-    position: inherit;
+  bottom: 0;
+  background-color:rgb(245, 151, 63);
+  width: 100%; /* tamanho total no eixo x (largura)*/
+  height: 2.5rem;
+  position: fixed;
+  padding-top: 8px;
+}
+
+.Rodape p {
+    left: 40px;
 }

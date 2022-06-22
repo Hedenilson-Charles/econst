@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import Button from 'react-bootstrap/Button';
 
 const Login = () => {
 
@@ -9,24 +8,28 @@ const Login = () => {
 
     return ( 
         <div className="Login">
-            <div>
-                <h2> Login</h2>
-                <br/>
-                <input placeholder = "Insira seu e-mail..."/>
-                <br/>
-                <input placeholder = "Insira sua senha..."/>
-                <br/>
-                <Button variant="outline-primary">Login</Button>{''}
-                <br/>
 
-                <Button variant="outline-primary">Não possui conta? Cadastro</Button>{''}
-                <Link to={'/cadastro'}>
-                <Button variant="outline-primary">Não possui conta? Cadastrar</Button>{''}
+            <h1>Login</h1>
+            <h2>Insira seus dados abaixo</h2>
+            <div className="ContainerLogin">
+            
+            <form>
+                <input type='email' placeholder="Insira seu e-mail..."/>
+                <input type='password' placeholder="Insira sua senha..."/>
+            </form>
+
+
+            </div>
+            <div className="Botoes">
+                <Link to='/'>
+                    <button className="Botao1">Entrar</button>
                 </Link>
-
+                <Link to='/cadastro'>
+                    <button className="Botao2">Cadastre-se</button>
+                </Link>
             </div>
         </div>
      );
 }
  
-export default Login;
+export default Login; 
