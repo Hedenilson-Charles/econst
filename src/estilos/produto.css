@@ -13,7 +13,7 @@ border: 1.5px solid black;
 margin: 20px;
 }
 
-.Botão2{
+.Produto .Botão2{
 border-radius: 10px;
 height: 45px;
 margin: 5px;
@@ -24,14 +24,14 @@ margin-left: 60px;
 
 }
 
-.informacao button:hover {
+.Produto .informacao button:hover {
     border-radius: 20px;
     border-radius: 20px;
     color: rgb(255, 255, 255);
 }
 
-.Botão{
-border-radius: 10px;
+.Produto .Botão{
+    border-radius: 10px;
 height: 40px;
 margin: 8px; 
 border: none;
@@ -40,20 +40,20 @@ color: rgb(236, 231, 223);
 margin-left: 40px;
 }
 
-.BlocoImagem img{
+.Produto .BlocoImagem img{
  height: 500px;
 padding: 20px 50px;
 
 }
 
-.BlocoImagem1 img{
+.Produto .BlocoImagem1 img{
     display: flex;
     justify-content: center;
     height: 90px;
     margin: 6px;
 }
 
-.Bloco1 {
+.Produto .Bloco1 {
     display: flex;
     justify-content: space-around;
     background:#eeeeeb;
@@ -65,7 +65,7 @@ padding: 20px 50px;
 
 }
 
-.Descricao{
+.Produto .Descricao{
     text-align: left;
     margin-left: 23%; 
     font-size: 20px;
