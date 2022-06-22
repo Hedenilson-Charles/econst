@@ -19,7 +19,7 @@ const CadastraProduto = () => {
                     
                     <textarea className='descricao' placeholder='Adicione uma descrição ao seu produto.'/>
                     <input type='file'/>
-                    <button className='botão'> Confirmar </button>
+                    <button className='botao'> Confirmar </button>
             
                 </form>
                 

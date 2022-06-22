@@ -20,7 +20,7 @@ const Menu = () => {
             <div className="Pesquisa">
                 <form>
                     
-                    <input placeholder="Insira um produto de interesse..."/>
+                    <input placeholder="Insira um produto de interesse..." autoFocus/>
                     <Link to={'/pesquisa'}>
                     <button>Buscar</button>
                     </Link>
