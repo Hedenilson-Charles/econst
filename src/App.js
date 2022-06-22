@@ -12,6 +12,7 @@ import Carrinho from "./Carrinho";
 import Teste from "./Teste";
 import Painel from "./Painel";
 import CadastraProduto from "./CadastroProduto";
+import Pedidos from "./Pedidos";
 
 
 const App = () => {
@@ -24,6 +25,7 @@ const App = () => {
       
 
       <Routes>
+        <Route path="/pedidos" element={<Pedidos/>}/>
         <Route path="/teste" element={<Teste/>}/>
         <Route path="/" element={<Inicio/>} />
         <Route path="/usuario" element={<Usuario/>}/>

@@ -30,7 +30,7 @@ const Menu = () => {
             </div>
 
             <div className="Teste">
-                <Link to={'/teste'}>TESTE</Link>
+                <Link to={'/pedidos'}>Pedidos</Link>
             </div>
 
             <div>
