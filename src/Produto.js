@@ -4,6 +4,16 @@ const Produto = () => {
 
     require('./estilos/produto.css');
 
+    const MudarImagem = (evento) => {
+        const elemento = evento.target;
+        const srcThumb = elemento.getAttribute('src');
+        const srcPrincipal = document.getElementById('imgPrincipal').getAttribute('src');
+
+
+        elemento.setAttribute('src', srcPrincipal);
+        document.getElementById('imgPrincipal').setAttribute('src', srcThumb);
+        
+    }
     return(
         <div className="Produto">
 
@@ -11,16 +21,16 @@ const Produto = () => {
 
                 <div className="BlocoImagem1">
 
-                    <img onClick={'MudarImagem'} alt="Imagem"  src="https://static.riachuelo.com.br/RCHLO/13174711003/portrait/f29e0008f49f3aede5a8e3a3686faae82f1f024a.jpg?imwidth=400"/>
-                    <img onClick={'MudarImagem1'}  alt="Imagem" src="https://static.riachuelo.com.br/RCHLO/13174711003/portrait/254a72bf1aa30d4dc96bf8292b9695bb73470216.jpg?imwidth=70"/>
-                    <img onClick={'MudarImagem2 '} alt="Imagem" src="https://static.riachuelo.com.br/RCHLO/13174711003/portrait/d76f0fe59d365fd18a77dbd992ed59b4fdc713be.jpg?imwidth=70"/>
+                    <img onClick={(e)=>MudarImagem(e)} alt="Imagem1"  src="https://static.riachuelo.com.br/RCHLO/13174711003/portrait/f29e0008f49f3aede5a8e3a3686faae82f1f024a.jpg?imwidth=400"/>
+                    <img onClick={(e)=>MudarImagem(e)}  alt="Imagem2" src="https://static.riachuelo.com.br/RCHLO/13174711003/portrait/254a72bf1aa30d4dc96bf8292b9695bb73470216.jpg?imwidth=70"/>
+                    <img onClick={(e)=>MudarImagem(e)} alt="Imagem3" src="https://static.riachuelo.com.br/RCHLO/13174711003/portrait/d76f0fe59d365fd18a77dbd992ed59b4fdc713be.jpg?imwidth=70"/>
 
 
                 </div>
                 
                 <div className="BlocoImagem">
 
-                <img alt="Imagem" src="https://static.riachuelo.com.br/RCHLO/13174711003/portrait/f29e0008f49f3aede5a8e3a3686faae82f1f024a.jpg?imwidth=70"/>
+                <img id="imgPrincipal" alt="Imagem" src="https://static.riachuelo.com.br/RCHLO/13174711003/portrait/f29e0008f49f3aede5a8e3a3686faae82f1f024a.jpg?imwidth=70"/>
 
                 </div>
 
