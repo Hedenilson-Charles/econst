@@ -74,6 +74,35 @@ LOCK TABLES `clientes` WRITE;
 UNLOCK TABLES;
 
 --
+-- Table structure for table `pedidos`
+--
+
+DROP TABLE IF EXISTS `pedidos`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `pedidos` (
+  `idpedidos` int NOT NULL AUTO_INCREMENT,
+  `nome_cliente` varchar(45) NOT NULL,
+  `nome_produto` varchar(45) DEFAULT NULL,
+  `quantidade` int NOT NULL,
+  `valor` varchar(45) NOT NULL,
+  `data` date NOT NULL,
+  `endereco` varchar(45) NOT NULL,
+  `cep` varchar(45) NOT NULL,
+  PRIMARY KEY (`idpedidos`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `pedidos`
+--
+
+LOCK TABLES `pedidos` WRITE;
+/*!40000 ALTER TABLE `pedidos` DISABLE KEYS */;
+/*!40000 ALTER TABLE `pedidos` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `produtos`
 --
 
@@ -112,4 +141,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-06-22 13:57:12
+-- Dump completed on 2022-06-22 16:42:30
