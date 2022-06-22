@@ -45,7 +45,7 @@ const Produto = () => {
             </div>
 
             <div className="Descricao">
-                <p>Teste do texto</p>
+                <p>Descrição do produto</p>
 
             </div>
             
