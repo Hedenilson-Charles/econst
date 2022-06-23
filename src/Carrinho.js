@@ -15,15 +15,15 @@ const Carrinho = () => {
                     <div className="blocoImagem">
                     <img src="https://previews.123rf.com/images/aquir/aquir1311/aquir131100316/23569861-sample-grunge-red-round-stamp.jpg"/></div>
 
-                <div className='Blocobutton'>    
-                    <button> Cancelar</button> 
-                </div>
 
                 <div>    
                 <Link className="Link" to={'/produto'}> </Link>
                 <p> Bala de Gelatina e Marshmallows Dentadura 90g - Fini</p>
                 </div>
                      
+                <div className='Blocobutton'>    
+                    <button> Remover</button> 
+                </div>
                    
                     </div>
                 <hr/>
@@ -34,9 +34,6 @@ const Carrinho = () => {
                 <div className="blocoImagem">
                 <img src="https://previews.123rf.com/images/aquir/aquir1311/aquir131100316/23569861-sample-grunge-red-round-stamp.jpg"/>  </div>
                            
-                <div className='Blocobutton'>    
-                 <button> Cancelar</button> 
-                </div>
                 
 
                 <div>    
@@ -44,6 +41,9 @@ const Carrinho = () => {
                 <p> Bala de Gelatina e Marshmallows Dentadura 90g - Fini</p>
                 </div>
 
+                <div className='Blocobutton'>    
+                 <button> Remover</button> 
+                </div>
                      
                     </div>
             </Link>
@@ -54,15 +54,16 @@ const Carrinho = () => {
                     <div className="blocoImagem">
                     <img src="https://previews.123rf.com/images/aquir/aquir1311/aquir131100316/23569861-sample-grunge-red-round-stamp.jpg"/></div>
 
-                <div className='Blocobutton'>    
-                    <button> Cancelar</button> 
-                </div>
                      
                 <div>    
                 <Link className="Link" to={'/produto'}> </Link>
                 <p> Bala de Gelatina e Marshmallows Dentadura 90g - Fini</p>
                 </div>
                      
+                <div className='Blocobutton'>    
+                    <button> Remover</button> 
+                </div>
+
                     </div>
             <hr/>
             </Link>
