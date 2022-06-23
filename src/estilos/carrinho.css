@@ -1,4 +1,4 @@
-.Resultado {
+.Carrinho .Resultado {
     display: flex;
     justify-content: space-around;
     align-items: center                                                          ;
@@ -21,11 +21,11 @@
     background-color: #ffcc50
 }
 
- .blocotextoBotao {
+.Carrinho .blocotextoBotao {
      text-align: left;
      width: 50%;
  }
 
-.Link{
+.Carrinho .Link{
     color: #000000;
 }
