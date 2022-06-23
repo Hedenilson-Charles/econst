@@ -30,6 +30,7 @@ const Pesquisa = () => {
 
 
     require('./estilos/pesquisa.css');
+    
     return(
 
         <div className="Pesquisa">
@@ -39,20 +40,24 @@ const Pesquisa = () => {
                     (produtos == 0? "Carregando..." : 
                             produtos.map( u => 
                                 {
+                                const dinheiro = u.preco.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
                                 console.log(u);
                                 return(
 
-                                    <Link to='/produto'>
+                                    <div className="TextDecoration">
+                                    <Link className="Link" to='/produto'>
                                         <div className="Resultado">
                                             <div className="BlocoImagem">
                                                 <img src="https://thumbs.dreamstime.com/b/sample-stamp-white-background-sign-90532936.jpg"/>
                                             </div>
                                             <div className="blocoTextoBotao">
                                                 <h3>{u.nome}</h3>
-                                                <p>{u.email}</p>                       
+                                                <p>{dinheiro}</p> 
+                                                <p className="Descricao">{u.descricao}</p>                      
                                             </div>                                        
                                         </div>
                                     </Link>
+                                    </div>
                                     
                                 )})
                     )
