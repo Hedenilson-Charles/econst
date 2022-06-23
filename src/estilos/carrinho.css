@@ -5,9 +5,10 @@
 }
 
 .Carrinho img{
-    width: 10%;
+    width: 5%;
     margin: 10px;
     border-radius: 10px;
+    
 }
 
 .Carrinho button{
@@ -18,7 +19,7 @@
     font-size: 10px;
     text-align: center;
     color: #000000;
-    background-color:#ffffc3;
+   background-color: rgb(255, 166, 0);
 }
 
 .Carrinho .blocotextoBotao {
@@ -29,3 +30,9 @@
 .Carrinho .Link{
     color: #000000;
 }
+
+.Carrinho{
+    
+
+}
+
