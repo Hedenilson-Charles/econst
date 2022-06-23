@@ -9,7 +9,7 @@
   .Container {
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
     width: 1000px;
     height: 100%;
   }

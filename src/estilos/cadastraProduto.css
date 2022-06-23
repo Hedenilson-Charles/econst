@@ -1,6 +1,6 @@
 .ContainerCP {
     width: 800px;
-    background-color: none;
+    background-color: #f1f2f3;
     margin-left: auto;
     margin-right: auto;
     border: 10px;
@@ -10,8 +10,29 @@
 
 .ContainerCP input{
     margin:5px;
-    border-radius: 20px;
-    padding: 5px;
+    border-radius: 10px;
+    padding: 7px; 
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+    width: 98%;
+    text-align: center;
+    
+}
+.texto {
+text-align: center;
+}
+.descricao {
+    height: 75px;
+    word-wrap: wrap;
+    width: 98%;
+    border-radius: 10px;
+    border-color: black;
+    padding: 10px;
+    resize: none;
+    margin-left: 5px;
+    margin-top: 6px ;
+    text-align: center;
 }
 
 .PreviaImagem {
@@ -20,6 +41,21 @@
     width: 200px;
     height: 200px;
     background-color: rgb(209, 209, 209);
-    border: 5px solid rgb(255, 255, 255);
+    border: 100px solid rgb(255, 255, 255);
+    padding: 3000px;
 }
-
+.botao{
+    margin-left: 10px;
+    color: #000000 ;
+    background-image: linear-gradient(to top, #f3951a, #f1b23c );
+    border: none;
+    border-radius: 500px;
+    padding: 10px;
+    margin: 5px;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 10px;
+    margin-top: 10px ;
+   
+    
+}

@@ -3,17 +3,23 @@ import React from 'react';
 const CadastraProduto = () => {
     require('./estilos/cadastraProduto.css');
     return ( 
-        <div>
+        <div> 
+            <div className='texto' > 
+                <h1>  Cadastre seu produto </h1>
+                <h2>Insira os dados do produto abaixo</h2>
+            </div>   
+            
             <div className='ContainerCP'>
                 <form>
+                    <br></br>
                     
                     <input placeholder='Insira o nome do produto.'/>
                     
                     <input placeholder='Insira a quantidade em estoque.'/>
                     
-                    <input placeholder='Adicione uma descrição ao seu produto.'/>
+                    <textarea className='descricao' placeholder='Adicione uma descrição ao seu produto.'/>
                     <input type='file'/>
-
+                    <button className='botao'> Confirmar </button>
             
                 </form>
                 

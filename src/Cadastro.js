@@ -8,6 +8,8 @@ const Cadastro = () => {
 
     require('./estilos/cadastro.css');
 
+
+
     return(
 
          <div>

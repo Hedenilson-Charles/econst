@@ -20,7 +20,7 @@ const Menu = () => {
             <div className="Pesquisa">
                 <form>
                     
-                    <input placeholder="Insira um produto de interesse..."/>
+                    <input placeholder="Insira um produto de interesse..." autoFocus/>
                     <Link to={'/pesquisa'}>
                     <button>Buscar</button>
                     </Link>
@@ -30,7 +30,7 @@ const Menu = () => {
             </div>
 
             <div className="Teste">
-                <Link to={'/teste'}>TESTE</Link>
+                <Link to={'/pedidos'}>Pedidos</Link>
             </div>
 
             <div>
