@@ -41,6 +41,9 @@ const Inicio = () => {
                 (produtos == 0? "Carregando..." : 
                         produtos.map( u => 
                             {
+                            
+                            
+                                var dinheiro = u.preco.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
                             console.log(u);
                             return(
 
@@ -48,8 +51,8 @@ const Inicio = () => {
                                 <div className="CardProduto">
                                     <Link className="Link" to={'/produto'}>
                                         <img className="Imagem" src="https://previews.123rf.com/images/aquir/aquir1311/aquir131100316/23569861-sample-grunge-red-round-stamp.jpg"/>
-                                        <p>R${u.nome}</p>
-                                        <p>{u.email}</p>
+                                        <p className="textoCard">{u.nome}</p>
+                                        <p className="preco">{dinheiro}</p>
                                     </Link>
                                 </div>
                                 

@@ -30,7 +30,6 @@
   }
    
 .CardProduto p {
-    color: #a3a5ae;
     font-size: 16px;
   }
    
@@ -39,4 +38,13 @@
 }
 .Link {
   text-decoration: none;
+}
+
+.preco {
+  color: red;
+}
+
+.textoCard {
+  color: gray;
+  font-size: 30px;
 }

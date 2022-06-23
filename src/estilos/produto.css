@@ -4,23 +4,23 @@
 
 .Produto .Geral{
 
- width: 450px;
- padding: 100px 110px;
-border-radius: 50px;
-height: 590px;
-background: #ffffff;
-border: 1.5px solid black;
-margin: 20px;
+    width: 450px;
+    padding: 100px 110px;
+    border-radius: 50px;
+    height: 590px;
+    background: #ffffff;
+    border: 1.5px solid black;
+    margin: 20px;
 }
 
 .Produto .Botão2{
-border-radius: 10px;
-height: 45px;
-margin: 5px;
-border: none;
-background-image: linear-gradient(rgb(245, 151, 63), #e09018);
-color: rgb(236, 231, 223);
-margin-left: 60px;
+    border-radius: 10px;
+    height: 45px;
+    margin: 5px;
+    border: none;
+    background-image: linear-gradient(rgb(245, 151, 63), #e09018);
+    color: rgb(236, 231, 223);
+    margin-left: 60px;
 
 }
 
@@ -32,18 +32,17 @@ margin-left: 60px;
 
 .Produto .Botão{
     border-radius: 10px;
-height: 40px;
-margin: 8px; 
-border: none;
-background-image: linear-gradient(rgb(245, 151, 63), #e09018);
-color: rgb(236, 231, 223);
-margin-left: 40px;
+    height: 40px;
+    margin: 8px; 
+    border: none;
+    background-image: linear-gradient(rgb(245, 151, 63), #e09018);
+    color: rgb(236, 231, 223);
+    margin-left: 40px;
 }
 
 .Produto .BlocoImagem img{
- height: 500px;
-padding: 20px 50px;
-
+    height: 500px;
+    padding: 20px 50px;
 }
 
 .Produto .BlocoImagem1 img{
