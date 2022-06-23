@@ -24,6 +24,16 @@
     text-decoration: none;
 }
 
+.CardProduto:hover #Descricao {
+        display: block;
+        color: gray;
+}
+
+#Descricao {
+  display: none;
+  transition: 0.9s;
+}
+
 .CardProduto:hover {
     transform: translateY(-5px);
     cursor: pointer;
@@ -48,3 +58,5 @@
   color: gray;
   font-size: 30px;
 }
+
+

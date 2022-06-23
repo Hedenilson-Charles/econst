@@ -1,6 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+
+
+
 const Inicio = () => {
 
     //INICIO DA CONEXÃO COM BANCO
@@ -31,9 +34,15 @@ const Inicio = () => {
 
     //FIM DA CONEXÃO COM BANCO
 
+    const MostraDescricao = () => {
+        document.getElementById('descricao').classlist.remove('Invisivel')
+    }
+   
+
     require('./estilos/inicio.css');
     return ( 
         <div className="Inicio">
+
 
 
             <div className="Container">
@@ -49,9 +58,10 @@ const Inicio = () => {
 
                                 
                                 <div className="CardProduto">
-                                    <Link className="Link" to={'/produto'}>
+                                    <Link  className="Link" to={'/produto'}>
                                         <img className="Imagem" src="https://previews.123rf.com/images/aquir/aquir1311/aquir131100316/23569861-sample-grunge-red-round-stamp.jpg"/>
                                         <p className="textoCard">{u.nome}</p>
+                                        <p id="Descricao" className="animate__animated animate__zoomIn animate__fast">{u.descricao}</p>
                                         <p className="preco">{dinheiro}</p>
                                     </Link>
                                 </div>
