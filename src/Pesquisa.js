@@ -10,8 +10,6 @@ const Pesquisa = () => {
 
         axios.get('http://localhost:3001/')
 
-        //axios.get('http://localhost:3001')
-
         .then(function (response) {
 
             const dados = response.data;
