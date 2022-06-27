@@ -48,6 +48,10 @@ console.log(id)
 
     },[])
 
+    const [quantidade , alteraQuantidade] = React.useState(0);
+
+
+
 
     return(
         <div className="Produto">
@@ -78,9 +82,14 @@ console.log(id)
                     <br/>
                     <p>R$00,00</p>
                     <br/>
-                    <p> <b>Tamanho:</b> XG</p>
                     <br/>
-                    <p> <b>Quantidade:</b> 100 </p>
+                    <div className="selecionador">
+
+                    <p> Quantidade de produto:
+                        <br/> 
+                         <button onClick={() => alteraQuantidade( quantidade - 1)}><b>-</b></button> {quantidade} <button onClick={()=> alteraQuantidade( quantidade + 1)}><b>+</b></button></p>
+
+                    </div>
 
                     
 
