@@ -8,14 +8,18 @@ const Carrinho = () => {
     return(
         <div className='Carrinho'>
         <div className='Container'>
-        
-              <p> Produto </p>
-                
+            
+
+              <p1> produto </p1>
+
+                <p> preço</p>
+
+            
             <Link className="Link" to={'/produto'}>
                     <div className="Resultado">
                     <div className="blocoImagem">
                     <img src="https://previews.123rf.com/images/aquir/aquir1311/aquir131100316/23569861-sample-grunge-red-round-stamp.jpg"/></div>
-
+                
                         
 
                 <div>    
