@@ -44,7 +44,7 @@ const Cadastro = () => {
                 <br/>
             </div>
 
-            <form>
+            <div>
 
                 <div className="Cadastro">
                     
@@ -80,7 +80,9 @@ const Cadastro = () => {
 
                     </div>
         </div>
+        </div>
      )
-}
+    }
+
  
 export default Cadastro;                                
