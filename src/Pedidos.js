@@ -9,6 +9,7 @@ const Pedidos = () => {
             <p>Tela de pedidos</p>
         </div>
      );
+     
 }
  
 export default Pedidos;

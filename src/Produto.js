@@ -1,21 +1,60 @@
-import React from "react";
+import React, { useState } from "react";
+import { useParams } from "react-router-dom";
 
 const Produto = () => {
 
+    const { id } = useParams();
+    console.log(id);
+
     require('./estilos/produto.css');
 
-    const MudarImagem = (evento) => {
+    // INICIO FUNÇÃO PRA MUDAR IMAGEM
+        const MudarImagem = (evento) => {
         const elemento = evento.target;
         const srcThumb = elemento.getAttribute('src');
         const srcPrincipal = document.getElementById('imgPrincipal').getAttribute('src');
-
-
         elemento.setAttribute('src', srcPrincipal);
-        document.getElementById('imgPrincipal').setAttribute('src', srcThumb);
-        
+        document.getElementById('imgPrincipal').setAttribute('src', srcThumb);  
     }
+    //FIM FUNÇAO MUDAR IMAGEM
+
+
+
+    //COMEÇANDO CONEXÃO COM O BANCO
+
+    const [produto , imprimeProduto] = useState([]);
+
+
+    const axios = require('axios').default;
+
+    React.useEffect ( () => {
+console.log(id)
+        axios.get('http://localhost:3001/produto/'+ id)
+
+        .then(function (response) {
+
+            const dados = response.data;
+            
+            
+            imprimeProduto(dados);
+            console.log(produto);
+            
+    
+        })
+
+        .catch(function (error) {
+            console.log(error);
+        })
+
+    },[])
+
+
     return(
         <div className="Produto">
+
+            <p>{}</p>
+            
+
 
             <div className="Bloco1">
 
