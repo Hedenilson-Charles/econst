@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Provedor } from "./ContextoProduto";
-import { Contexto } from "./ContextoProduto";
+
 
 
 
