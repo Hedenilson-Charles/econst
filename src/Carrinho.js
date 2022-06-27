@@ -25,6 +25,7 @@ const Carrinho = () => {
                 <button onClick={() => alteraQuantidade( quantidade - 1)}><b>-</b></button> {quantidade} <button onClick={()=> alteraQuantidade( quantidade + 1)}><b>+</b></button></p>
 
                 <p>Preço</p>
+             
 
             </div>
 
