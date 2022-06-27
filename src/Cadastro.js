@@ -42,8 +42,6 @@ const Cadastro = () => {
                 <h1>Cadastro</h1>
                 <h2>Insira seus dados abaixo:</h2>
                 <br/>
-
-
             </div>
 
             <form>
@@ -81,12 +79,6 @@ const Cadastro = () => {
                         </Link>
 
                     </div>
-
-            </form>
-
-                
-
-
         </div>
      )
 }

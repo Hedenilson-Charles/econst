@@ -71,6 +71,11 @@
     font: arial;
 }
 
+.selecionador button {
+    border: 4px #000000;
+    border-radius: 2px;
+}
+
 
 
 

@@ -1,14 +1,15 @@
 .Carrinho .Resultado {
     display: flex;
     justify-content: space-around;
-    align-items: center;                                                      ;
+    align-items: center; 
+   text-align: left;                                                    ;
 }
 
 .Carrinho img{
     width: 5%;
     margin: 10px;
     border-radius: 10px;
-    
+
 }
 
 .Carrinho button{
@@ -19,7 +20,7 @@
     font-size: 10px;
     text-align: center;
     color: #000000;
-   background-color: rgb(255, 166, 0);
+   background-color: rgb(255, 255, 255);
 }
 
 .Carrinho .blocotextoBotao {
@@ -29,10 +30,20 @@
 
 .Carrinho .Link{
     color: #000000;
+    text-align: left;
 }
 
-.Carrinho{
+.Carrinho p{
+    text-align: center;
+}
+
+.selecionador button{
+    margin-left: auto;
+}
+
+
+
     
 
-}
+
 

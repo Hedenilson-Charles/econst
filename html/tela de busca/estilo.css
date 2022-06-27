@@ -1,24 +1,34 @@
-
 header{
     display: flex;
     align-items:center;
     justify-content: space-around;
 }
-
 div{
     width: 145px;
     height: 135px;
     display: inline-block;
     color: white;
     margin-top: 50px;
-    margin-left: 50px;
+    margin-right: -150px;
+    margin-left: 150px ;
     
 }
 #container-a{
     background-color: rgb(102, 94, 94);
-
+    
 }
 #container-b{
     background-color: rgb(178, 178, 194);
     width: 370px;
-}    
+    
+
+}
+footer{
+    background-color: rgb(102, 94, 94);
+    width: 2500px;
+    height: 80px;
+    padding-top: 80px;
+    border-radius: 3px;
+    color: white;
+}
+    

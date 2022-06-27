@@ -48,6 +48,10 @@ const Produto = () => {
 
     },[])
 
+    const [quantidade , alteraQuantidade] = React.useState(0);
+
+
+
 
 
     return(
