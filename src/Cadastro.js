@@ -18,8 +18,6 @@ const Cadastro = () => {
                 <h1>Cadastro</h1>
                 <h2>Insira seus dados abaixo:</h2>
                 <br/>
-
-
             </div>
 
             <div className="Cadastro">
@@ -55,10 +53,6 @@ const Cadastro = () => {
                         </Link>
 
                     </div>
-
-                
-
-
         </div>
      )
 }
