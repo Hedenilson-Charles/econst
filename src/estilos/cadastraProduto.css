@@ -59,3 +59,13 @@ text-align: center;
    
     
 }
+
+.Preco{
+ height: 50px;
+ width: 60% !important;
+}
+
+.input-group {
+    max-width: 500px;
+    margin: 20px
+  }
