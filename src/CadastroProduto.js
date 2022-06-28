@@ -12,6 +12,8 @@ const CadastraProduto = () => {
         const descricao = document.getElementById('descricao').value;
         const marca = document.getElementById('marca').value;
 
+        /// teste
+
 
 
 
