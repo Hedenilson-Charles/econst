@@ -23,7 +23,7 @@ const Pedidos = () => {
         <div id="container-a"></div><div id="container-b"></div>
             
         <div id="container-a"></div><div id="container-b"></div>
-    </form>
+    </form>  
 </div>
 
 );}
