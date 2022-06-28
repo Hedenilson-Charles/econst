@@ -16,7 +16,7 @@ const Carrinho = () => {
         <div className="Elementos">
             <img alt='Compras' src='https://previews.123rf.com/images/aquir/aquir1311/aquir131100316/23569861-sample-grunge-red-round-stamp.jpg'/>
 
-            <p>Descrição para o rpoduto de teste XG blá blá blá blá e é isso, não sei o que estou fazendo. Obrigada!</p>
+            <p>Descrição para o produto de teste XG blá blá blá blá e é isso, não sei o que estou fazendo. Obrigada!</p>
 
             <div className="selecionador">
 
