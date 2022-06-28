@@ -8,6 +8,8 @@ const Cadastro = () => {
 
     require('./estilos/cadastro.css');
 
+    const [ rota , mudarota] = React.useState('/cadastro');
+
     //Função abaixo pega informações do input
 
     const Formulario = () => {
@@ -33,26 +35,35 @@ const Cadastro = () => {
 
             if ( senha1 == "") {
                 alert("Insira uma senha!")
+                mudarota('/');
             } else {
                 if (senha1 !== senha2) {
                     alert('As senhas não conferem!')
+                    mudarota('/')
                 } else {
                     if (cpf == "") { //Tratamento do CPF
                         alert('Insira um CPF valido')
+                        mudarota('/');
                     } else if ( cpf.length < 11) {
                         alert('Insira um CPF valido')
+                        mudarota('/');
                     } else if ( cpf.length > 11 ) {
                         alert('Insira um CPF valido')
+                        mudarota('/');
                     } else { // Tratamento do CEP
                         if (cep == "") {
                             alert('Insira um CEP valido')
+                            mudarota('/');
                         } else if (cep.length < 8) {
                             alert('Insira um CEP valido')
+                            mudarota('/');
                         } else if (cep.length > 8) {
                             alert('Insira um CEP valido')
+                            mudarota('/');
                         } else { //Verifica se os demais campos foram preenchidos (complemento não é obrigatorio)
                             if (uf == "" || cidade == "" || email == "" || senha1 == "" || nome == "") {
                                 alert("Por favor preencha todos os campos obrigatorios!")
+                                mudarota('/');
                             } else {
                                 // POST PRO BANCO USANDO AXIOS A PARTIR DAQUI
 
@@ -68,7 +79,7 @@ const Cadastro = () => {
                                     senha: senha1
                                 }
 
-                                console.log(obj);
+                                mudarota('/');
 
                                 const axios = require('axios').default;
                                 
@@ -131,7 +142,7 @@ const Cadastro = () => {
 
                     <div className="Botões">
 
-                        <Link to='/'>
+                        <Link to={rota}>
                         <button  onClick={()=> Formulario()} className="Botões3">Confirmar</button>
                         </Link>
                         
