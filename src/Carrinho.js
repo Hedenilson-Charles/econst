@@ -11,6 +11,12 @@ const Carrinho = () => {
     return(
         <div className='Carrinho'>
 
+
+            <div>
+            <p>Produto</p>
+            <p>Preço</p>
+            </div>
+
         <Link className="Link" to={'/produto'}> </Link>
 
         <div className="Elementos">
@@ -24,7 +30,7 @@ const Carrinho = () => {
                 <br/> 
                 <button onClick={() => alteraQuantidade( quantidade - 1)}><b>-</b></button> {quantidade} <button onClick={()=> alteraQuantidade( quantidade + 1)}><b>+</b></button></p>
 
-                <p>Preço</p>
+               
              
 
             </div>
