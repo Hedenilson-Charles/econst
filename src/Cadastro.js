@@ -8,11 +8,12 @@ const Cadastro = () => {
 
     require('./estilos/cadastro.css');
 
-    const [ rota , mudarota] = React.useState('/cadastro');
+    const [ rota , mudarota] = React.useState('/');
 
     //Função abaixo pega informações do input
 
-    const Formulario = () => {
+    const Formulario = (e) => {
+        e.preventDefault();
 
         //Tratativa de dados abaixo
             const nome = document.getElementById('name').value;
@@ -33,74 +34,14 @@ const Cadastro = () => {
             const senha1 = document.getElementById('senha1').value;
             const senha2 = document.getElementById('senha2').value;
 
-            if ( senha1 == "") {
-                alert("Insira uma senha!")
-                mudarota('/');
-            } else {
-                if (senha1 !== senha2) {
-                    alert('As senhas não conferem!')
-                    mudarota('/')
-                } else {
-                    if (cpf == "") { //Tratamento do CPF
-                        alert('Insira um CPF valido')
-                        mudarota('/');
-                    } else if ( cpf.length < 11) {
-                        alert('Insira um CPF valido')
-                        mudarota('/');
-                    } else if ( cpf.length > 11 ) {
-                        alert('Insira um CPF valido')
-                        mudarota('/');
-                    } else { // Tratamento do CEP
-                        if (cep == "") {
-                            alert('Insira um CEP valido')
-                            mudarota('/');
-                        } else if (cep.length < 8) {
-                            alert('Insira um CEP valido')
-                            mudarota('/');
-                        } else if (cep.length > 8) {
-                            alert('Insira um CEP valido')
-                            mudarota('/');
-                        } else { //Verifica se os demais campos foram preenchidos (complemento não é obrigatorio)
-                            if (uf == "" || cidade == "" || email == "" || senha1 == "" || nome == "") {
-                                alert("Por favor preencha todos os campos obrigatorios!")
-                                mudarota('/');
-                            } else {
-                                // POST PRO BANCO USANDO AXIOS A PARTIR DAQUI
-
-                                const obj = { // OBJETO PRA PASSAR PELO AXIOS
-                                    nome: nome,
-                                    endereco: endereco,
-                                    cpf: cpf,
-                                    cep: cep,
-                                    uf: uf,
-                                    cidade: cidade,
-                                    complemento: complemento,
-                                    email: email,
-                                    senha: senha1
-                                }
-
-                                mudarota('/');
-
-                                const axios = require('axios').default;
-                                
-                                    axios.post('http://localhost:3001/cadastro', obj)
-                                    .then(function(response){
-
-                                        console.log(response);
-                                    })
-
-                                    .catch(function(error){
-                                        console.log(error);
-                                    })
-                                  //FIM DO AXIOS
-                            }
-                        }
-                    }
-                }
+            if (senha1 !== senha2) {
+                alert('As senhas não conferem!')
             }
-    }
 
-    //
+return;
+
+}
+
 
     
 
@@ -118,33 +59,33 @@ const Cadastro = () => {
 
             <div>
 
-                <div className="Cadastro">
+                <form onSubmit={(e)=> Formulario(e)} className="Cadastro">
                     
-                    <input id="name" placeholder = "Nome..." />
+                    <input id="name" required placeholder = "Nome..." />
                     <br/>
-                    <input id="cpf" placeholder = "CPF" className="CPF"/>
+                    <input id="cpf" type='number' required minLength={11} placeholder = "CPF" className="CPF"/>
                     <br/>
-                    <input id="cep" placeholder = "CEP" className="CEP"/>
+                    <input id="cep" type='number' required minLength={11} placeholder = "CEP" className="CEP"/>
                     <br/>
-                    <input id="cidade" placeholder = "CIDADE" className="CIDADE"/>
-                    <input id="uf" placeholder = "UF" className="UF"/>
+                    <input id="cidade" required placeholder = "CIDADE" className="CIDADE"/>
+                    <input id="uf" required placeholder = "UF" className="UF"/>
                     <input id="complemento" placeholder = "COMPLEMENTO" className="COMPLEMENTO"/>
                     <br/>
-                    <input id="endereco" placeholder = "ENDEREÇO"/>
+                    <input id="endereco" required placeholder = "ENDEREÇO"/>
                     <br/>
-                    <input id="email" placeholder = "E-MAIL"/>
+                    <input id="email" required placeholder = "E-MAIL"/>
                     <br/>
-                    <input id="senha1" type ="password" placeholder = "SENHA" className="SENHA"/>
-                    <input id="senha2" type = "password" placeholder = "CONFIRMAR SENHA" className="CONFIRMAR"/>
+                    <input id="senha1" required type ="password" placeholder = "SENHA" className="SENHA"/>
+                    <input id="senha2" required type = "password" placeholder = "CONFIRMAR SENHA" className="CONFIRMAR"/>
                     <br/>
 
-                </div>
+                        <button className="Botões3">Confirmar</button>
+                </form>
 
                     <div className="Botões">
 
-                        <Link to={rota}>
-                        <button  onClick={()=> Formulario()} className="Botões3">Confirmar</button>
-                        </Link>
+                        
+                    
                         
                         
                         <br/>
