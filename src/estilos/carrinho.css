@@ -1,3 +1,68 @@
+.Elementos {
+    display: flex;
+    justify-content: space-around;
+    margin-right: auto;
+    margin-left: auto;
+    width: 60%;
+    align-items: center;
+}
+
 .Elementos img{
     height: 150px;
+}
+
+.Elementos p {
+    max-width: 400px;
+}
+
+.Guia{
+    font-size: 20px;
+    font-family: arial;
+    display: flex;
+    justify-content:space-between;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.Guia2{
+    display: flex;
+    justify-content:space-between;
+    width: 40%;
+
+}
+.Descrição{
+    font-family: arial;
+    font-size: 17px;
+}
+
+.Carrinho{
+    text-align: center;
+}
+
+.quantidade{
+    font-family: arial;
+    font-size: 17px; 
+}
+
+.quantidade button{
+    border-radius: 7px;
+    background: rgb(255, 255, 255);
+}
+
+
+
+.quantidade{
+    margin-left: 150px;
+}
+
+.preco{
+    margin-left: 100px;
+}
+
+.remover button {
+    border-radius: 7px;
+    background-color: orange;
+    border: none;
+    height: 40px;
 }
