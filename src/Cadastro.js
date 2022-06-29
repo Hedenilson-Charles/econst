@@ -15,7 +15,34 @@ const Cadastro = () => {
     const Formulario = () => {
 
         const nome = document.getElementById('nome').value;
-        const cpf = document.getElementById('cpf').value
+        const cpf = document.getElementById('cpf').value;
+        const cep = document.getElementById('cep').value;
+        const cidade = document.getElementById('cidade').value;
+        const uf = document.getElementById('uf').value;
+        const complemento = document.getElementById('complemento').value;
+        const endereco = document.getElementById('endereco').value;
+        const email = document.getElementById('email').value;
+        const senha1 = document.getElementById('senha1').value;
+        const senha2 = document.getElementById('senha2').value;
+
+        if (senha1 == senha2) {
+            //Objeto que vai ser mandado para o axios
+            const obj = {
+                nome: nome,
+                cpf: cpf,
+                cep: cep,
+                cidade: cidade,
+                uf: uf,
+                complemento: complemento,
+                endereco: endereco,
+                email: email,
+                senha: senha1
+            }
+
+            const axios = require('axios').default;
+
+
+        }
         
     }
 
