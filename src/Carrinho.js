@@ -6,22 +6,23 @@ const Carrinho = () => {
     require('./estilos/carrinho.css');
 
     const [quantidade , alteraQuantidade] = React.useState(0);
-
+    
+    
 
     return(
-        <div className='Carrinho'>
+            <div className='Carrinho'>
 
 
-            <div className="Guia">
-            <p>Produto</p>
+                <div className="Guia">
+                <p>Produto</p>
 
-            <div className='Guia2'>
-            <p>Preço</p>
-            <p>Qtd.</p>
-            <hr/>
-            </div>
+                <div className='Guia2'>
+                <p>Preço</p>
+                <p>Qtd.</p>
+                <hr/>
+                </div>
 
-            
+                
             </div>
 
         <Link className="Link" to={'/produto'}> </Link>
