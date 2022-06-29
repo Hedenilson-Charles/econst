@@ -30,3 +30,32 @@ footer {
     border-radius: 3px;
     color: white;
 }
+
+.Informacao {
+    display: flex;
+    justify-content:space-between;
+    font-size: 20px;
+    font-family: arial;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Elementos img{
+    height: 150px;
+    width: 150px;
+}
+
+.Elementos {
+    display: flex;
+    justify-content: space-around;
+    margin-right: auto;
+    margin-left: auto;
+    width: 60%;
+    align-items: center;
+}
+.Descrição{
+    font-family: arial;
+    font-size: 17px;
+    width: 970px;
+}
