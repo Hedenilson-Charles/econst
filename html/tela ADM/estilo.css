@@ -1,9 +1,9 @@
-header .comeco{
+header {
     display: flex;
     align-items:center;
     justify-content: space-around;
 }
-div .container-a{
+div {
     width: 145px;
     height: 135px;
     display: inline-block;
@@ -11,16 +11,6 @@ div .container-a{
     margin-top: 50px;
     margin-right: -150px;
     margin-left: 150px ;
-}
-div .container-b{
-    width: 145px;
-    height: 135px;
-    display: inline-block;
-    color: white;
-    margin-top: 50px;
-    margin-right: -150px;
-    margin-left: 150px ;
-    
 }
 #container-a{
     background-color: rgb(102, 94, 94);

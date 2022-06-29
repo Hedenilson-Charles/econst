@@ -6,7 +6,8 @@ const Carrinho = () => {
     require('./estilos/carrinho.css');
 
     const [quantidade , alteraQuantidade] = React.useState(0);
-
+    
+    
 
     return(
             <div className='Carrinho'>
