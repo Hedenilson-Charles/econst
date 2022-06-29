@@ -1,6 +1,11 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 
+ function botão (){
+     const intermedio = document.getElementById( 'botão').value;
+     localStorage.setItem('Exemplo' , intermedio) 
+ }
+
 const Produto = () => {
 
     const { id } = useParams();
