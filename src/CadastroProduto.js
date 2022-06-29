@@ -7,46 +7,59 @@ const CadastraProduto = () => {
 
         const nome = document.getElementById('nome').value;
         const preco = document.getElementById('preco').value;
-        const tamanho = document.getElementById('tamanho').value;
+        const imagem = document.getElementById('imagem').value;
         const quantidade = document.getElementById('quantidade').value;
         const descricao = document.getElementById('descricao').value;
         const marca = document.getElementById('marca').value;
 
-        /// teste
+        const obj = {
+            nome: nome,
+            preco: preco,
+            imagem: imagem,
+            quantidade: quantidade,
+            descricao: descricao,
+            marca: marca
+        }
 
+/*       const axios = require('axios');
 
+                axios.post('http://localhost:3001/cadastraproduto/', obj )
+                .then(function(response){
+                    const dados = response.data;
+                })
 
-
-
-
+                .catch(function(error){
+                    console.log
+                }) */
     }
 
     return ( 
         <div> 
             <div className='texto' > 
-                <h1>  Cadastre seu produto </h1>
-                <h2>Insira os dados do produto abaixo</h2>
+                <h1>  Cadastro de produtos </h1>
+                <h2>Preencha os dados abaixo</h2>
             </div>   
             
-            <div className='ContainerCP'>
+            <div className='Container'>
                 <form>
-                    <br></br>
                     
-                    <input id='nome' placeholder='Insira o nome do produto.'/>
-                    <input id = 'marca'className="Preco" placeholder='Marca do produto'/>
-                    <input id='tamanho' className="Preco" placeholder='Dimensão do produto'/>
-                    <input id='preco' className="Preco" placeholder='Valor do produto'/>
-                    
-                    <input id='quantidade' placeholder='Insira a quantidade em estoque.'/>
+                    <input id='nome' placeholder='Nome do produto.'/>
+
+                    <div className='Bloco'>
+                        <input id = 'marca'className="Preco" placeholder='Marca'/>
+                        <input required id='preco' className="Preco" placeholder='Preço'/>
+                        <input required type="number" id='quantidade' placeholder='Estoque'/>
+                    </div>
+
+                    <input id='imagem' required placeholder='Link da imagem...'/>
+
                     
                     <textarea id='descricao' className='descricao' placeholder='Adicione uma descrição ao seu produto.'/>
 
 
                     <button onClick={()=> Formulario()} className='botao'> Confirmar </button>
                     
-            
-                </form>
-                
+                </form>   
             </div>
         </div>
      );

@@ -76,3 +76,27 @@
 .Botões2{
     background-image: linear-gradient(to top, #c7c3bf, #fffbf5 );
 }
+
+
+.Invisivel {
+    display: none;
+}
+
+.Visivel {
+    display: block;
+}
+
+
+.Modal {
+    position: fixed;
+    z-index: 300;
+    background: white;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    right: auto;
+    left: auto;
+
+    padding-top: 100px;
+    padding-bottom: 100px;
+}

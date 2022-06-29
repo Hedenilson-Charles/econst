@@ -8,7 +8,7 @@ const Cadastro = () => {
 
     require('./estilos/cadastro.css');
 
-    const [ rota , mudarota] = React.useState('/');
+    const [invisivel , tiraInvisivel] = React.useState("Invisivel");
 
     //Função abaixo pega informações do input
 
@@ -16,7 +16,8 @@ const Cadastro = () => {
         e.preventDefault();
 
         //Tratativa de dados abaixo
-            const nome = document.getElementById('name').value;
+            const nomepuro = document.getElementById('name').value;
+            const nome = nomepuro.trim();
 
             //Tratamento do cpf
             const cpfpuro = document.getElementById('cpf').value;
@@ -34,11 +35,33 @@ const Cadastro = () => {
             const senha1 = document.getElementById('senha1').value;
             const senha2 = document.getElementById('senha2').value;
 
-            if (senha1 !== senha2) {
+/*           if (senha1 !== senha2) {
                 alert('As senhas não conferem!')
-            }
+            } else {
 
-return;
+                const obj = {
+                    nome: nome,
+                    cpf: cpf,
+                    cap: cep,
+                    endereco: endereco,
+                    uf: uf,
+                    cidade: cidade,
+                    complemento: complemento,
+                    email: email,
+                    senha: senha1
+                }
+
+                const axios = require('axios');
+
+                axios.post('http://localhost:3001/cadastro/', obj )
+                .then(function(response){
+                    const dados = response.data;
+                })
+
+                .catch(function(error){
+                    console.log
+                })    
+            } */
 
 }
 
@@ -50,6 +73,20 @@ return;
     return(
 
          <div>
+
+            <div id="invisivel" className={invisivel}>
+                <div className="Modal">
+
+                    <h2>Cadastro realizado com sucesso!</h2>
+                    <Link to='/'>
+                    <button>Começar a comprar</button>
+                    </Link>
+
+                </div>
+            </div>
+
+
+
             <div className="inicio">
 
                 <h1>Cadastro</h1>
@@ -75,19 +112,15 @@ return;
                     <br/>
                     <input id="email" required placeholder = "E-MAIL"/>
                     <br/>
-                    <input id="senha1" required type ="password" placeholder = "SENHA" className="SENHA"/>
-                    <input id="senha2" required type = "password" placeholder = "CONFIRMAR SENHA" className="CONFIRMAR"/>
+                    <input id="senha1" required minLength={6} type ="password" placeholder = "SENHA" className="SENHA"/>
+                    <input id="senha2" required minLength={6} type = "password" placeholder = "CONFIRMAR SENHA" className="CONFIRMAR"/>
                     <br/>
 
                         <button className="Botões3">Confirmar</button>
                 </form>
 
                     <div className="Botões">
-
-                        
-                    
-                        
-                        
+  
                         <br/>
                         <Link to="/login">
                         <button className="Botões2">Já é cliente? Fazer login</button>

@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 
 const Pesquisa = () => {
 
+
+
     const [produtos, imprimeProdutos] = React.useState([]);
     const axios = require('axios').default;
 

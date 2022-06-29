@@ -3,6 +3,12 @@ import { Link } from "react-router-dom";
 
 const Menu = () => {
 
+    const FazPesquisa = () => {
+
+        const produtoPesquisado = document.getElementById('pesquisa').value;
+
+    }
+
 
     require('./estilos/menu.css');
 
@@ -20,7 +26,7 @@ const Menu = () => {
             <div className="Pesquisa">
                 <form>
                     
-                    <input placeholder="Insira um produto de interesse..." autoFocus/>
+                    <input id="pesquisa" placeholder="Insira um produto de interesse..." autoFocus/>
                     <Link to={'/pesquisa'}>
                     <button>Buscar</button>
                     </Link>
