@@ -59,4 +59,7 @@
   font-size: 30px;
 }
 
-
+   
+.CardProduto img {
+    width: 100%;
+}
