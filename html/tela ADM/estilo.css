@@ -1,9 +1,9 @@
-header{
+header .começo{
     display: flex;
     align-items:center;
     justify-content: space-around;
 }
-div{
+div .container-a .container-b{
     width: 145px;
     height: 135px;
     display: inline-block;
@@ -23,7 +23,7 @@ div{
     
 
 }
-footer{
+footer {
     background-color: rgb(102, 94, 94);
     width: 2500px;
     height: 80px;

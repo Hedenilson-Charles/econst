@@ -2,6 +2,30 @@ import React from "react";
 
 
 const Pedidos = () => {
+    
+    const [produtos, imprimeProdutos] = React.useState([]);
+    const axios = require('axios').default;
+
+    React.useEffect ( () => {
+
+        axios.get('http://localhost:3001/')
+
+        .then(function (response) {
+
+            const dados = response.data;
+            
+            
+            imprimeProdutos(dados);
+        
+      
+        })
+
+        .catch(function (error) {
+            console.log(error);
+        })
+
+    }, [])
+
 
     require('./estilos/pedidos.css');
     
