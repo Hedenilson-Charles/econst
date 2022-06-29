@@ -1,9 +1,18 @@
-header .começo{
+header .comeco{
     display: flex;
     align-items:center;
     justify-content: space-around;
 }
-div .container-a .container-b{
+div .container-a{
+    width: 145px;
+    height: 135px;
+    display: inline-block;
+    color: white;
+    margin-top: 50px;
+    margin-right: -150px;
+    margin-left: 150px ;
+}
+div .container-b{
     width: 145px;
     height: 135px;
     display: inline-block;
