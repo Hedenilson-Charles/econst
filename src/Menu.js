@@ -30,7 +30,6 @@ const Menu = () => {
                     <Link to={'/pesquisa'}>
                     <button>Buscar</button>
                     </Link>
-                    <Link to={'/carrinho'} className="icone"> <img src="https://i.imgur.com/aKCd3IU.png"/> </Link>
                     
                 </form>
             </div>

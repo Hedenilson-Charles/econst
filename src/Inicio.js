@@ -61,7 +61,7 @@ const Inicio = () => {
                                 <div onClick={()=> pegaID(localStorage.setItem("idProduto" , u.idprodutos))} className="CardProduto">
                                 
                                     <Link className="Link" to={`/produto/${u.idprodutos}`}>
-                                    <img className="Imagem" src="https://previews.123rf.com/images/aquir/aquir1311/aquir131100316/23569861-sample-grunge-red-round-stamp.jpg"/>
+                                    <img className="Imagem" src={u.imagem}/>
                                         <p className="textoCard">{u.nome}</p>
                                         <p id="Descricao" className="animate__animated animate__zoomIn animate__fast">{u.descricao}</p>
                                         <p className="preco">{dinheiro}</p>
