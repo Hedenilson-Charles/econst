@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Carrinho = () => {
 
+   
     require('./estilos/carrinho.css');
 
     const [quantidade , alteraQuantidade] = React.useState(0);
