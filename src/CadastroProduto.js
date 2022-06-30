@@ -3,7 +3,9 @@ import React from 'react';
 const CadastraProduto = () => {
     require('./estilos/cadastraProduto.css');
 
-    const Formulario = () => {
+    const Formulario = (e) => {
+
+        e.preventDefault();
 
         const nome = document.getElementById('nome').value;
         const preco = document.getElementById('preco').value;
@@ -12,25 +14,27 @@ const CadastraProduto = () => {
         const descricao = document.getElementById('descricao').value;
         const marca = document.getElementById('marca').value;
 
-        const obj = {
+        const obj = { // Objeto a se passar pelo axios
             nome: nome,
             preco: preco,
             imagem: imagem,
             quantidade: quantidade,
             descricao: descricao,
             marca: marca
-        }
+        } // fim do objeto
 
-/*       const axios = require('axios');
+        const axios = require('axios').default;
 
-                axios.post('http://localhost:3001/cadastraproduto/', obj )
-                .then(function(response){
-                    const dados = response.data;
-                })
+            axios.post('http://localhost:3001/cadastraproduto/', obj)
+            .then(function(response){
+                const dados = response.data;
+                console.log(response.data);
+            })
 
-                .catch(function(error){
-                    console.log
-                }) */
+            .catch (function(error){
+                console.log(error);
+            })
+        
     }
 
     return ( 
@@ -41,7 +45,7 @@ const CadastraProduto = () => {
             </div>   
             
             <div className='Container'>
-                <form>
+                <form onSubmit={(e)=> Formulario(e)}>
                     
                     <input id='nome' placeholder='Nome do produto.'/>
 
@@ -57,7 +61,7 @@ const CadastraProduto = () => {
                     <textarea id='descricao' className='descricao' placeholder='Adicione uma descrição ao seu produto.'/>
 
 
-                    <button onClick={()=> Formulario()} className='botao'> Confirmar </button>
+                    <button className='botao'> Confirmar </button>
                     
                 </form>   
             </div>

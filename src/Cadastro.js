@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import swal from 'sweetalert'; // Import do sweet alert
 
 
 
@@ -12,7 +13,10 @@ const Cadastro = () => {
 
     const  [Visibilidade, MudaVisibilidade] = React.useState('Invisivel');
 
-    const Formulario = () => {
+    const Formulario = (e) => {
+
+        e.preventDefault();
+
 
         const nome = document.getElementById('nome').value;
         const cpf = document.getElementById('cpf').value;
@@ -24,10 +28,11 @@ const Cadastro = () => {
         const email = document.getElementById('email').value;
         const senha1 = document.getElementById('senha1').value;
         const senha2 = document.getElementById('senha2').value;
+        
 
         if (senha1 == senha2) {
-            //Objeto que vai ser mandado para o axios
-            const obj = {
+            
+            const obj = {// Inicio do objeto
                 nome: nome,
                 cpf: cpf,
                 cep: cep,
@@ -37,16 +42,31 @@ const Cadastro = () => {
                 endereco: endereco,
                 email: email,
                 senha: senha1
-            }
+            } // fim do objeto
 
             const axios = require('axios').default;
 
+            axios.post('http://localhost:3001/cadastro/', obj)
+            .then(function(response){
+                const dados = response.data;
+                console.log(response);
+                swal("Cadastro realizado com sucesso!")
+                
 
-        }
-        
+            })
+
+            .catch (function(error){
+                console.log(error);
+                swal("Parece que este e-mail já está sendo usado");
+            })
+
+        } else {
+            alert("As senhas não conferem!");
+        }  
     }
 
     
+
 
 
     return(
@@ -79,11 +99,11 @@ const Cadastro = () => {
 
                     <form onSubmit={(e)=> Formulario(e)} className="Cadastro">
                         
-                        <input id="name" required placeholder = "Nome..." />
+                        <input id="nome" required placeholder = "Nome..." />
                         <br/>
-                        <input id="cpf" type='number' required minLength={11} placeholder = "CPF" className="CPF"/>
+                        <input id="cpf" required minLength={11} placeholder = "CPF" className="CPF"/>
                         <br/>
-                        <input id="cep" type='number' required minLength={11} placeholder = "CEP" className="CEP"/>
+                        <input id="cep" required minLength={8} placeholder = "CEP" className="CEP"/>
                         <br/>
                         <input id="cidade" required placeholder = "CIDADE" className="CIDADE"/>
                         <input id="uf" required placeholder = "UF" className="UF"/>

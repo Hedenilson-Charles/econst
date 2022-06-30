@@ -9,10 +9,21 @@ const Menu = () => {
 
     }
 
+    //Inicio de tratamento de sessão
+
+    const usuario = localStorage.getItem("IDusuario")
+
+    //const Sair = () => {
+     //   localStorage.removeItem("IDusuario");
+     //   window.location.href='/';
+    //}
+
 
     require('./estilos/menu.css');
 
     return(
+
+
         <div className="Menu">
 
             <div className="Logo">
@@ -40,9 +51,12 @@ const Menu = () => {
 
             <div>
                 
-                <Link to={'/cadastro'}className="editar1">Cadastrar</Link>
-                <Link to={'/login'}className="editar1">Login</Link>
-                <Link to={'/usuario'}className="icone"><img src="https://i.imgur.com/ecjAjrL.png"/></Link>
+                
+                
+
+                { (usuario == undefined? <div><Link to={'/cadastro'}className="editar1">Cadastrar</Link> <Link to={'/login'}className="editar1">Login</Link> </div>
+                 : <Link to={'/usuario'}className="icone"><img src="https://i.imgur.com/ecjAjrL.png"/></Link>)  }
+                
             </div>
             
 
