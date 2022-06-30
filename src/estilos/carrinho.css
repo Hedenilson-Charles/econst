@@ -1,3 +1,14 @@
+
+div .teste{
+    width: 145px;
+    height: 135px;
+    display: inline-block;
+    color: white;
+    margin-top: 50px;
+    margin-right: -150px;
+    margin-left: 150px ;
+}
+
 .Elementos {
     display: flex;
     justify-content: space-around;

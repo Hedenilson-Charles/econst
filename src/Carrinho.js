@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 
 const Carrinho = () => {
 
+   
     require('./estilos/carrinho.css');
 
     const [quantidade , alteraQuantidade] = React.useState(0);
-    
     
 
     return(
@@ -25,7 +25,7 @@ const Carrinho = () => {
                 
             </div>
 
-        <Link className="Link" to={'/produto'}> </Link>
+        <Link className="Link" to={'/produto'}></Link>
 
         <div className="Elementos">
             <img alt='Compras' src='https://previews.123rf.com/images/aquir/aquir1311/aquir131100316/23569861-sample-grunge-red-round-stamp.jpg'/>
