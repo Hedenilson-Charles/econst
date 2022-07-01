@@ -98,9 +98,7 @@ const Cadastro = () => {
                         <br/>
 
                             <button className="Botões3">Confirmar</button>
-                    </form>
-
-                        <div className="Botões">
+                            <div className="Botões">
     
                             <br/>
                             <Link to="/login">
@@ -108,6 +106,9 @@ const Cadastro = () => {
                             </Link>
 
                         </div>
+                    </form>
+
+                       
                 </div>
             </div>
         </div>

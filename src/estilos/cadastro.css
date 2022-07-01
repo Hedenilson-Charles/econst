@@ -71,6 +71,11 @@
 }
 .Botões3{
     background-image: linear-gradient(to top, #f3951a, #f1b23c );
+    border-radius: 10px;
+    border: none;
+    height: 40px;
+    margin: 15px;
+    margin-left: 230px !important;
 }
 
 .Botões2{
