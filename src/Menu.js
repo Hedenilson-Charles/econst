@@ -34,6 +34,10 @@ const Menu = (props) => {
                 
             </div>
 
+            <Link to="/carrinho">
+                Carrinho
+            </Link>
+
             <div className="Pesquisa">
                 <form>
                     

@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import swal from 'sweetalert'; // Import do sweet alert
 
-<<<<<<< Updated upstream
 
 
 
@@ -135,44 +134,6 @@ const Cadastro = () => {
         </div>
      )
     
-=======
-require('./estilos/cadastro.css');
-
-const Cadastro = () => {
-    return ( 
-
-        <div className="Cadastro">
-        <div>
-
-            <h2> Cadastrar</h2>
-            <h3> Insira seu dados:</h3>
-            <br/>
-            
-            <input placeholder = "Nome..."/>
-            
-            <input placeholder = "CPF"/>
-            
-            <input placeholder = "CEP"/>
-            
-            <input placeholder = "Cidade"/> <input placeholder = "UF"/> 
-            
-            <input placeholder = "Complemento..."/>
-            
-            <input placeholder = "Endereço..."/>
-
-            <input placeholder = "Email..."/>
-
-            <input placeholder = "Senha"/> <input placeholder = "Confirmar senha"/>
-
-            <input placeholder = "Confirmar"/> 
-
-            <button> Já é cliente? Login</button>
-
-
-        </div>
-    </div>
-     );
->>>>>>> Stashed changes
 }
  
 export default Cadastro;                                

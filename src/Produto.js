@@ -12,6 +12,7 @@ const Produto = (props ) => {
     }
 
     const { id } = useParams();
+   /*
 
     require('./estilos/produto.css');
 
@@ -22,7 +23,7 @@ const Produto = (props ) => {
         props.alteraCarrinho (carrinho )
 
 
-    }
+    }*/
 
     // INICIO FUNÇÃO PRA MUDAR IMAGEM
         const MudarImagem = (evento) => {
@@ -35,6 +36,26 @@ const Produto = (props ) => {
     }
     //FIM FUNÇAO MUDAR IMAGEM
 
+    //Funçao do carrinho abaixo
+
+
+
+    const AdicionaCarrinho = () => {
+        let contador = localStorage.length;
+        if ( localStorage.getItem("IDusuario")) {
+            contador--;
+        }
+
+        const quantidade = document.getElementById
+        localStorage.setItem(`produto${id}`, );
+    }
+
+
+
+
+
+    //
+
 
 
     //COMEÇANDO CONEXÃO COM O BANCO
@@ -43,6 +64,8 @@ const Produto = (props ) => {
 
 
     const axios = require('axios').default;
+
+
 
     React.useEffect ( () => {
 
@@ -98,14 +121,14 @@ const Produto = (props ) => {
                         <br/>
                         <p>R${produto[0].preco}</p>
                         <br/>
-                        <p> <b>Quantidade:</b> 100 </p>
+                        <input type="number"/>
 
                         
 
                     <div className="BlocoBotao">
                         <button className="Botão2">Comprar agora</button>
                         <br/>
-                        <button onClick={() =>adicionaCarrinho()} className="Botão">Adicionar ao Carrinho</button>
+                        <button onClick={() =>AdicionaCarrinho()} className="Botão">Adicionar ao Carrinho</button>
                     </div>
 
                 </div>
