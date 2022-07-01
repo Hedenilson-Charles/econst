@@ -1,18 +1,12 @@
 import React, { useState } from "react";
+import { Form } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 
  
 
 const Produto = (props ) => {
-
-    require('./estilos/produto.css');
     
-    function botão (){
-        const intermedio = document.getElementById( 'botão').value;
-        localStorage.setItem('Exemplo' , intermedio) 
         
-    }
-
     const { id } = useParams();
    /*
 
@@ -48,8 +42,8 @@ const Produto = (props ) => {
             contador--;
         }
 
-        const quantidade = document.getElementById
-        localStorage.setItem(`produto${id}`, );
+        const quantidade = document.getElementById('quantidade').value;
+        localStorage.setItem(`produto${id}`, quantidade );
     }
 
 
@@ -118,23 +112,22 @@ const Produto = (props ) => {
 
                     </div>
 
-                <div className="Geral">
+                <form onSubmit={() =>AdicionaCarrinho()} className="Geral">
                         <h3> {produto[0].nome}</h3>
                         <br/>
                         <p>R${produto[0].preco}</p>
                         <br/>
-                       
-                        <p><b>Quantidade:</b><input type="number"/></p>
+                        <input id="quantidade" min={1} type="number"/>
 
                         
 
                     <div className="BlocoBotao">
                         <button className="Botão2">Comprar agora</button>
                         <br/>
-                        <button onClick={() =>AdicionaCarrinho()} className="Botão">Adicionar ao Carrinho</button>
+                        <button className="Botão">Adicionar ao Carrinho</button>
                     </div>
 
-                </div>
+                </form>
                 </div>
 
                 <div className="Descricao">

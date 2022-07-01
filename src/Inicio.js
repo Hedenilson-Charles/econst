@@ -9,7 +9,7 @@ const Inicio = () => {
 
     //guardar o produto no localstorage
 
-    const [idprodutos , pegaID]= React.useState(0);
+    
     //INICIO DA CONEXÃO COM BANCO
 
     const [produtos, imprimeProdutos] = React.useState([]);
@@ -58,7 +58,7 @@ const Inicio = () => {
                             return(
 
                                 
-                                <div onClick={()=> pegaID(localStorage.setItem("idProduto" , u.idprodutos))} className="CardProduto">
+                                <div className="CardProduto">
                                 
                                     <Link className="Link" to={`/produto/${u.idprodutos}`}>
                                     <img className="Imagem" src={u.imagem}/>
