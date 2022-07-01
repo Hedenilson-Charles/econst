@@ -3,16 +3,26 @@ import { useParams } from "react-router-dom";
 
  
 
-const Produto = () => {
+const Produto = (props ) => {
     
     function botão (){
         const intermedio = document.getElementById( 'botão').value;
         localStorage.setItem('Exemplo' , intermedio) 
+        
     }
 
     const { id } = useParams();
 
     require('./estilos/produto.css');
+
+    const adicionaCarrinho = () => {
+        const carrinho = props.carrinho 
+        
+        carrinho.push (id)
+        props.alteraCarrinho (carrinho )
+
+
+    }
 
     // INICIO FUNÇÃO PRA MUDAR IMAGEM
         const MudarImagem = (evento) => {
@@ -21,6 +31,7 @@ const Produto = () => {
         const srcPrincipal = document.getElementById('imgPrincipal').getAttribute('src');
         elemento.setAttribute('src', srcPrincipal);
         document.getElementById('imgPrincipal').setAttribute('src', srcThumb);  
+
     }
     //FIM FUNÇAO MUDAR IMAGEM
 
@@ -94,7 +105,7 @@ const Produto = () => {
                     <div className="BlocoBotao">
                         <button className="Botão2">Comprar agora</button>
                         <br/>
-                        <button className="Botão">Adicionar ao Carrinho</button>
+                        <button onClick={() =>adicionaCarrinho()} className="Botão">Adicionar ao Carrinho</button>
                     </div>
 
                 </div>

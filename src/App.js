@@ -18,10 +18,12 @@ import Pedidos from "./Pedidos";
 const App = () => {
 
   require('./estilos/app.css');
-
+    
+    
   return(
+    
     <div className="App">
-      <Menu/>
+      <Menu />
       
 
       <Routes>
@@ -31,9 +33,9 @@ const App = () => {
         <Route path="/usuario" element={<Usuario/>}/>
         <Route path="/cadastro" element={<Cadastro/>}/>
         <Route path="/login" element={<Login/>}/>
-        <Route path="/produto/:id" element={<Produto/>}/>
+        <Route path="/produto/:id" element={<Produto />}  />
         <Route path="/pesquisa" element={<Pesquisa/>}/>
-        <Route path="/carrinho" element={<Carrinho/>}/>
+        <Route path="/carrinho" element={<Carrinho />} />
         <Route path="/painel" element={<Painel/>}/>
         <Route path="/cadastraProduto" element={<CadastraProduto/>}/>
       </Routes>

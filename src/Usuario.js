@@ -5,6 +5,11 @@ const Usuario = () => {
 
     require('./estilos/usuario.css');
 
+    const Sair = () => {
+        localStorage.removeItem("IDusuario");
+        window.location.href='/';
+    }
+
     return(
         <div className="Usuario">
 
@@ -20,7 +25,7 @@ const Usuario = () => {
                 <img src="https://cdn.onlinewebfonts.com/svg/img_184513.png"/>
                 <p>Fulano da Silva</p>
                 <Link to="/cadastraProduto">
-                    <button>Cadastra Produto</button>
+                    <button onClick={()=> Sair()}>Sair</button>
                 </Link>
             </div>
          
