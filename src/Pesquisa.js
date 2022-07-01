@@ -19,7 +19,8 @@ const Pesquisa = () => {
             
             
             imprimeProdutos(dados);
-      
+        
+
         })
 
         .catch(function (error) {
@@ -60,7 +61,7 @@ const Pesquisa = () => {
                                     </div>
                                     
                                 )})
-                    )
+                    )       
                 }    
 
             </div>

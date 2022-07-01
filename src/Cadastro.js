@@ -66,11 +66,7 @@ const Cadastro = () => {
             alert("As senhas não conferem!");
         }  
     }
-
     
-
-
-
     return(
 
          <div>
@@ -128,13 +124,11 @@ const Cadastro = () => {
                             </Link>
 
                         </div>
-                    </form>
-
-                       
+                    </form>                       
                 </div>
             </div>
         </div>
-     )
+    )
     
 }
  

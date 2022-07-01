@@ -14,11 +14,8 @@ const Login = () => {
     const MudaID = () => {
         localStorage.setItem("IDusuario" , usuario);
     }
-
-    
-
     const VerificaLogin = (e) => {
-
+    
         e.preventDefault();
 
 
@@ -69,8 +66,7 @@ const Login = () => {
                 </form>
 
             </div>
-
-
+            
             <div className="Botoes">
                 
                 
