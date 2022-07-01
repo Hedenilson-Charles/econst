@@ -76,6 +76,19 @@
     border-radius: 2px;
 }
 
+.Geral{
+    font-size: 18px;
+}
+
+.Geral input{
+    border-radius: 10px;
+    width: 100px;
+    margin: 8px;
+
+}   
+.BlocoBotao button{
+    height: 52px !important;
+}
 
 
 

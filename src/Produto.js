@@ -4,6 +4,8 @@ import { useParams } from "react-router-dom";
  
 
 const Produto = (props ) => {
+
+    require('./estilos/produto.css');
     
     function botão (){
         const intermedio = document.getElementById( 'botão').value;
@@ -121,7 +123,8 @@ const Produto = (props ) => {
                         <br/>
                         <p>R${produto[0].preco}</p>
                         <br/>
-                        <input type="number"/>
+                       
+                        <p><b>Quantidade:</b><input type="number"/></p>
 
                         
 
