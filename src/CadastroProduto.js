@@ -7,6 +7,7 @@ const CadastraProduto = () => {
 
         e.preventDefault();
 
+        e.preventDefault()
         const nome = document.getElementById('nome').value;
         const preco = document.getElementById('preco').value;
         const imagem = document.getElementById('imagem').value;

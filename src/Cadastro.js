@@ -18,6 +18,8 @@ const Cadastro = () => {
         e.preventDefault();
 
 
+        alert('chegou aqui');
+
         const nome = document.getElementById('nome').value;
         const cpf = document.getElementById('cpf').value;
         const cep = document.getElementById('cep').value;
