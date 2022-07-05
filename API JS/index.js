@@ -136,6 +136,18 @@ app.post('/pesquisa/', (req,res) => {
 })
 //.......
 
+//Post de pagina de usuario MEXENDO AQUI
+  app.post('/usuario/', (req,res) => {
+
+    const ID = req.body.idusuario;
+    const query = `SELECT * FROM econst.clientes WHERE idclientes = "${ID}"`
+
+    connection.query(query, function(error,results,fields){
+      if(error) throw error;
+      res.send(results)
+    })
+  })
+//
 //POST DE CARRINHO 
 
 app.post('/carrinho/', (req, res) => {
@@ -154,7 +166,11 @@ app.post('/carrinho/', (req, res) => {
   const query = montaQuery + finalQuery;
 
   connection.query(query, function(error,results,fields){
-    if (error) throw error;
+    if (error) {
+      res.status(404);
+      res.send();
+      return;
+    }
     res.send(results)
     })
 })

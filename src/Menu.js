@@ -41,18 +41,16 @@ const Menu = () => {
                     <input required id="pesquisa" placeholder="Insira um produto de interesse..." autoFocus/>
                     
                     <button>Buscar</button>
+
+                    <Link to="/carrinho">
+                        <img className="icone" src="https://i.imgur.com/OXzf3ww.png"/>
+                    </Link>
                     
                     
                 </form>
             </div>
 
-            <Link to="/carrinho">
-                <img className="icone" src="https://i.imgur.com/OXzf3ww.png"/>
-            </Link>
-
-            <div className="Teste">
-                <Link to={'/pedidos'}>Pedidos</Link>
-            </div>
+            
 
             <div>
                 
