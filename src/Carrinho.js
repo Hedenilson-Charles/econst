@@ -16,7 +16,7 @@ const Carrinho = () => {
 
         for (let i = 0; i < nprodutos; i++) {
             const item = Object.keys(localStorage)[i]
-            if (item == "IDusuario") {
+            if (item == "IDusuario" || item == "Pesquisa") {//Linha modificada aqui
                 continue
             }
             const idproduto = parseInt(item.split("produto")[1]);

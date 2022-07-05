@@ -1,19 +1,17 @@
 import React from "react";
-import { Link, Navigate } from "react-router-dom";
+import { Link} from "react-router-dom";
 import swal from "sweetalert";
-import { useNavigate } from "react-router-dom";
 
 const Login = () => {
 
     require('./estilos/login.css');
 
-    const navigate = useNavigate();
-
-    const [usuario, mudaUsuario] = React.useState(0);
+    //const [usuario, mudaUsuario] = React.useState(0); //Trechos possivelmente inuteis
     
-    const MudaID = () => {
-        localStorage.setItem("IDusuario" , usuario);
-    }
+    //const MudaID = () => {
+    //    localStorage.setItem("IDusuario" , usuario);
+    //}
+
     const VerificaLogin = (e) => {
     
         e.preventDefault();

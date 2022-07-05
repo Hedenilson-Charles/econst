@@ -6,18 +6,23 @@ const Pesquisa = () => {
 
 
 
+    const ItemPesquisado = localStorage.getItem("Pesquisa");
     const [produtos, imprimeProdutos] = React.useState([]);
+
     const axios = require('axios').default;
 
     React.useEffect ( () => {
 
-        axios.get('http://localhost:3001/')
+        const obj = {
+            nome: ItemPesquisado
+        }
+
+
+        axios.post('http://localhost:3001/pesquisa/', obj) //completar aqui
 
         .then(function (response) {
-
             const dados = response.data;
-            
-            
+            console.log(dados)
             imprimeProdutos(dados);
 
         })
@@ -45,7 +50,7 @@ const Pesquisa = () => {
                                 return(
 
                                     <div className="TextDecoration">
-                                    <Link className="Link" to='/produto'>
+                                    <Link className="Link" to={`/produto/${u.idprodutos}`}>
                                         <div className="Resultado">
                                             <div className="BlocoImagem">
                                                 <img src="https://thumbs.dreamstime.com/b/sample-stamp-white-background-sign-90532936.jpg"/>

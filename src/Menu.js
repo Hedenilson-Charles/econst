@@ -1,22 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Menu = (props) => {
+const Menu = () => {
 
-    const FazPesquisa = () => {
 
+    const FazPesquisa = (e) => {
+
+        e.preventDefault();
         const produtoPesquisado = document.getElementById('pesquisa').value;
+        localStorage.setItem("Pesquisa", produtoPesquisado)
+        window.location.href='/pesquisa';
 
     }
 
-    //Inicio de tratamento de sessão
-
     const usuario = localStorage.getItem("IDusuario")
 
-    //const Sair = () => {
-     //   localStorage.removeItem("IDusuario");
-     //   window.location.href='/';
-    //}
 
 
     require('./estilos/menu.css');
@@ -35,16 +33,18 @@ const Menu = (props) => {
             </div>
 
             <Link to="/carrinho">
-                Carrinho
+                Meu cu
             </Link>
 
             <div className="Pesquisa">
-                <form>
+                <form onSubmit={(e)=> FazPesquisa(e)}>
+
                     
-                    <input id="pesquisa" placeholder="Insira um produto de interesse..." autoFocus/>
-                    <Link to={'/pesquisa'}>
+                    
+                    <input required id="pesquisa" placeholder="Insira um produto de interesse..." autoFocus/>
+                    
                     <button>Buscar</button>
-                    </Link>
+                    
                     
                 </form>
             </div>

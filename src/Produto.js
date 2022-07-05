@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 
  
 
-const Produto = (props ) => {
+const Produto = () => {
     
         
     const { id } = useParams();
