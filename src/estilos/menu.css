@@ -61,10 +61,13 @@ height: 250px;
 }
 .icone {
     text-decoration: none;
+    width: 40px !important;
+    height: 40px !important;
 }
 
 .icone img {
     height: 40px;
+    width: 40px;
 }
 
 input{

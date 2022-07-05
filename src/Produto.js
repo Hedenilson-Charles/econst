@@ -8,9 +8,10 @@ const Produto = () => {
     
         
     const { id } = useParams();
-   /*
+
 
     require('./estilos/produto.css');
+    /*
 
     const adicionaCarrinho = () => {
         const carrinho = props.carrinho 
@@ -97,18 +98,11 @@ const Produto = () => {
             <div className="Produto">
                 <div className="Bloco1">
 
-                    <div className="BlocoImagem1">
-
-                        <img onClick={(e)=>MudarImagem(e)} alt="Imagem1"  src="https://static.riachuelo.com.br/RCHLO/13174711003/portrait/f29e0008f49f3aede5a8e3a3686faae82f1f024a.jpg?imwidth=400"/>
-                        <img onClick={(e)=>MudarImagem(e)}  alt="Imagem2" src="https://static.riachuelo.com.br/RCHLO/13174711003/portrait/254a72bf1aa30d4dc96bf8292b9695bb73470216.jpg?imwidth=70"/>
-                        <img onClick={(e)=>MudarImagem(e)} alt="Imagem3" src="https://static.riachuelo.com.br/RCHLO/13174711003/portrait/d76f0fe59d365fd18a77dbd992ed59b4fdc713be.jpg?imwidth=70"/>
-
-
-                    </div>
+                    
                     
                     <div className="BlocoImagem">
 
-                    <img id="imgPrincipal" alt="Imagem" src="https://static.riachuelo.com.br/RCHLO/13174711003/portrait/f29e0008f49f3aede5a8e3a3686faae82f1f024a.jpg?imwidth=70"/>
+                    <img id="imgPrincipal" alt="Imagem" src={produto[0].imagem}/>
 
                     </div>
 
@@ -117,7 +111,7 @@ const Produto = () => {
                         <br/>
                         <p>R${produto[0].preco}</p>
                         <br/>
-                        <input id="quantidade" min={1} type="number"/>
+                        <input className="invisivel" id="quantidade" min={1} max={100} type="number"/>
 
                         
 
@@ -144,3 +138,14 @@ const Produto = () => {
 }
 
 export default Produto;
+
+/*
+<div className="BlocoImagem1">
+
+                        <img onClick={(e)=>MudarImagem(e)} alt="Imagem1"  src="https://static.riachuelo.com.br/RCHLO/13174711003/portrait/f29e0008f49f3aede5a8e3a3686faae82f1f024a.jpg?imwidth=400"/>
+                        <img onClick={(e)=>MudarImagem(e)}  alt="Imagem2" src="https://static.riachuelo.com.br/RCHLO/13174711003/portrait/254a72bf1aa30d4dc96bf8292b9695bb73470216.jpg?imwidth=70"/>
+                        <img onClick={(e)=>MudarImagem(e)} alt="Imagem3" src="https://static.riachuelo.com.br/RCHLO/13174711003/portrait/d76f0fe59d365fd18a77dbd992ed59b4fdc713be.jpg?imwidth=70"/>
+
+
+                    </div>
+*/

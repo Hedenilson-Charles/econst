@@ -32,9 +32,6 @@ const Menu = () => {
                 
             </div>
 
-            <Link to="/carrinho">
-                Carrinho
-            </Link>
 
             <div className="Pesquisa">
                 <form onSubmit={(e)=> FazPesquisa(e)}>
@@ -48,6 +45,10 @@ const Menu = () => {
                     
                 </form>
             </div>
+
+            <Link to="/carrinho">
+                <img className="icone" src="https://i.imgur.com/OXzf3ww.png"/>
+            </Link>
 
             <div className="Teste">
                 <Link to={'/pedidos'}>Pedidos</Link>
