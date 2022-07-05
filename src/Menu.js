@@ -33,7 +33,7 @@ const Menu = () => {
             </div>
 
             <Link to="/carrinho">
-                Meu cu
+                Carrinho
             </Link>
 
             <div className="Pesquisa">
