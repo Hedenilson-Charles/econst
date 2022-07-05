@@ -52,7 +52,7 @@ const Pesquisa = () => {
                                     <Link className="Link" to={`/produto/${u.idprodutos}`}>
                                         <div className="Resultado">
                                             <div className="BlocoImagem">
-                                                <img src="https://thumbs.dreamstime.com/b/sample-stamp-white-background-sign-90532936.jpg"/>
+                                                <img src={u.imagem}/>
                                             </div>
                                             <div className="blocoTextoBotao">
                                                 <h3>{u.nome}</h3>

@@ -61,51 +61,41 @@ const Carrinho = () => {
 
         
             <div className='Carrinho'>
+
+                <div className="Guia">
+                    <p>Produto</p>
+
+                    <div className='Guia2'>
+                    <p>Preço</p>
+                    <p>Qtd.</p>
+                    <hr/>
+                </div>
+
+                
+                </div>
                 {(produtos == 0 ? "Carregando...": 
                 
                 produtos.map(u => {
                     return(
                         <div>
-                            <p>{u.nome}</p>
-                        </div>
-                    )
-                })
-                
-                
-                
-                
-                
-                )}
-
-
-                <div className="Guia">
-                <p>Produto</p>
-
-                <div className='Guia2'>
-                <p>Preço</p>
-                <p>Qtd.</p>
-                <hr/>
-                </div>
-
-                
-            </div>
+                            
 
         <Link className="Link" to={'/produto'}></Link>
 
         <div className="Elementos">
-            <img alt='Compras' src='https://previews.123rf.com/images/aquir/aquir1311/aquir131100316/23569861-sample-grunge-red-round-stamp.jpg'/>
+            <img alt='Compras' src={u.imagem}/>
 
             <Link className="Link" to={'/produto'}> 
 
             <div className='Descrição'>
                 
-            <p>Descrição para o rpoduto de teste XG blá blá blá blá e é isso, não sei o que estou fazendo. Obrigada!</p>
+            <p>{u.nome}</p>
             
             </div>
             </Link>
 
             <div className='preco'>
-                <p>R$00,00</p>
+                <p>{u.preco}</p>
             </div>
 
             <div className="quantidade">
@@ -121,6 +111,18 @@ const Carrinho = () => {
 
 
         </div>
+                        </div>
+                    )
+                })
+                
+                
+                
+                
+                
+                )}
+
+
+                
        </div> 
     );
 }
