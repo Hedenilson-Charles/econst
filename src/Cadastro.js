@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import swal from 'sweetalert'; // Import do sweet alert
 
 
@@ -8,8 +9,8 @@ import swal from 'sweetalert'; // Import do sweet alert
 const Cadastro = () => {
 
     require('./estilos/cadastro.css');
-    
 
+    const navigate = useNavigate();
 
     const  [Visibilidade, MudaVisibilidade] = React.useState('Invisivel');
 
@@ -17,8 +18,6 @@ const Cadastro = () => {
 
         e.preventDefault();
 
-
-        alert('chegou aqui');
 
         const nome = document.getElementById('nome').value;
         const cpf = document.getElementById('cpf').value;
@@ -52,18 +51,37 @@ const Cadastro = () => {
             .then(function(response){
                 const dados = response.data;
                 console.log(response);
-                swal("Cadastro realizado com sucesso!")
+
+                swal({
+                    title: "Sucesso!",
+                    text: "Seu cadastro foi realizado!",
+                    icon: "success",
+                    button: false,
+                    timer: 1000
+                  })
+                  .then(vaiproLogin => {
+                        navigate('/login');
+                  });
+                
                 
 
             })
 
             .catch (function(error){
                 console.log(error);
-                swal("Parece que este e-mail já está sendo usado");
+                swal({
+                    title: "Ops!",
+                    text: "Parece que este e-mail já está sendo usado!",
+                    icon: "warning"
+            });
             })
 
         } else {
-            alert("As senhas não conferem!");
+            swal({
+                title: "Ops!",
+                text: "Suas senhas não conferem!",
+                icon: "warning",
+              })
         }  
     }
     

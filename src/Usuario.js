@@ -34,9 +34,12 @@ const Usuario = () => {
     },[])
 
     const Sair = () => {
+
         localStorage.removeItem("IDusuario");
         window.location.href='/';
     }
+
+    //PFP teste
 
     return(
         <div className="Usuario">
@@ -52,7 +55,7 @@ const Usuario = () => {
                 <div className="BlocoDireito">
                     <img src="https://cdn.onlinewebfonts.com/svg/img_184513.png"/>
                     <p>{usuario[0].nome}</p>
-                    {(usuario[0].adm == 2? "" : <Link to="/cadastraProduto"><button>Novo Produto</button> </Link>)}
+                    {(usuario[0].adm == 2? "" : <Link to="/cadastraProduto"><button className="BotaoSair">Novo Produto</button> </Link>)}
                     <Link to="/">
                         <button className="BotaoSair" onClick={()=> Sair()}>Sair</button>
                     </Link>

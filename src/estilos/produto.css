@@ -5,9 +5,8 @@
 .Produto .Geral{
 
     width: 450px;
-    padding: 100px 110px;
+    padding: 80px;
     border-radius: 50px;
-    height: 590px;
     background: #ffffff;
     border: 1.5px solid black;
     margin: 20px;
@@ -41,8 +40,9 @@
 }
 
 .Produto .BlocoImagem img{
-    height: 500px;
-    padding: 20px 50px;
+    height: 400px  !important;
+    max-width: 800px;
+    padding: 20px 20px;
 }
 
 .Produto .BlocoImagem1 img{
@@ -66,8 +66,8 @@
 
 .Produto .Descricao{
     text-align: left;
-    margin-left: 23%;
-    width: 1000px; 
+    margin-left: 18%;
+    width: 900px; 
     font-size: 20px;
     font: arial;
 }

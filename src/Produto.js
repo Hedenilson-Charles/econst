@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import { Form } from "react-bootstrap";
 import { useParams } from "react-router-dom";
+import swal from "sweetalert";
+import { useNavigate } from "react-router-dom";
 
  
 
@@ -8,6 +9,7 @@ const Produto = () => {
     
         
     const { id } = useParams();
+    const navigate = useNavigate();
 
 
     require('./estilos/produto.css');
@@ -37,7 +39,8 @@ const Produto = () => {
 
 
 
-    const AdicionaCarrinho = () => {
+    const AdicionaCarrinho = (e) => {
+        e.preventDefault();
         let contador = localStorage.length;
         if ( localStorage.getItem("IDusuario")) {
             contador--;
@@ -45,13 +48,18 @@ const Produto = () => {
 
         const quantidade = document.getElementById('quantidade').value;
         localStorage.setItem(`produto${id}`, quantidade );
+        swal({
+            text: "Produto adicionado ao carrinho!",
+            icon: "success",
+            button: false,
+            timer: 800
+          })
     }
-
-
-
-
-
     //
+
+    const Vaiproinicio = () => {
+        navigate('/carrinho')
+    }
 
 
 
@@ -106,7 +114,7 @@ const Produto = () => {
 
                     </div>
 
-                <form onSubmit={() =>AdicionaCarrinho()} className="Geral">
+                <form onSubmit={(e) =>AdicionaCarrinho(e)} className="Geral">
                         <h3> {produto[0].nome}</h3>
                         <br/>
                         <p>R${produto[0].preco}</p>
@@ -116,7 +124,7 @@ const Produto = () => {
                         
 
                     <div className="BlocoBotao">
-                        <button className="Botão2">Comprar agora</button>
+                        <button onClick={()=> setTimeout(Vaiproinicio,1000)} className="Botão2">Comprar agora</button>
                         <br/>
                         <button className="Botão">Adicionar ao Carrinho</button>
                     </div>

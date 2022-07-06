@@ -35,8 +35,21 @@ const Login = () => {
                     alert('E-mail ou senha incorretos!')
                 } else {
                     swal(`Bem vindo de volta ` + dados[0].nome);
-                    localStorage.setItem("IDusuario",dados[0].idclientes);
-                    window.location.href='/';
+
+
+                    swal({
+                        title: "Login realizado com sucesso!",
+                        text: `Olá ${dados[0].nome}`,
+                        icon: "success",
+                        button: false,
+                        timer: 800
+                      })
+                      .then(terminaLogin => {
+                        localStorage.setItem("IDusuario",dados[0].idclientes);
+                        window.location.href='/';    
+                      });
+
+
                 }
             })
 
@@ -63,15 +76,14 @@ const Login = () => {
                     </div>
                 </form>
 
+                <div className="Botoes"> 
+                    <Link to='/cadastro'>
+                        <button className="Botao2">Cadastre-se</button>
+                    </Link>
+                </div>
+                
             </div>
             
-            <div className="Botoes">
-                
-                
-                <Link to='/cadastro'>
-                    <button className="Botao2">Cadastre-se</button>
-                </Link>
-            </div>
         </div>
      );
 }

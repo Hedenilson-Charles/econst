@@ -6,7 +6,7 @@
     width: 100%;
   }
 
-  .Container {
+.Inicio  .Container {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -14,7 +14,7 @@
     height: 100%;
   }
 
-.CardProduto {
+.Inicio .CardProduto {
     border-radius: 5px;
     box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
     padding: 30px;
@@ -24,7 +24,7 @@
     text-decoration: none;
 }
 
-.CardProduto:hover #Descricao {
+.Inicio .CardProduto:hover #Descricao {
         display: block;
         color: gray;
 }
@@ -34,32 +34,33 @@
   transition: 0.9s;
 }
 
-.CardProduto:hover {
+.Inicio .CardProduto:hover {
     transform: translateY(-5px);
     cursor: pointer;
   }
    
-.CardProduto p {
+.Inicio .CardProduto p {
     font-size: 16px;
   }
    
-.Imagem {
+.Inicio .Imagem {
     width: 100%;
+    height: 180px;
 }
-.Link {
+.Inicio .Link {
   text-decoration: none;
 }
 
-.preco {
+.Inicio .preco {
   color: red;
 }
 
-.textoCard {
+.Inicio .textoCard {
   color: gray;
   font-size: 30px;
 }
 
    
-.CardProduto img {
+.Inicio .CardProduto img {
     width: 100%;
 }

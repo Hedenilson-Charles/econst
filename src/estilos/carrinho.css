@@ -1,15 +1,7 @@
 
-div .teste{
-    width: 145px;
-    height: 135px;
-    display: inline-block;
-    color: white;
-    margin-top: 50px;
-    margin-right: -150px;
-    margin-left: 150px ;
-}
 
-.Elementos {
+
+.Carrinho .Elementos {
     display: flex;
     justify-content: space-around;
     margin-right: auto;
@@ -18,62 +10,67 @@ div .teste{
     align-items: center;
 }
 
-.Elementos img{
+.Carrinho .Elementos img{
     height: 150px;
 }
 
-.Elementos p {
+.Carrinho .Elementos p {
     max-width: 400px;
 }
 
-.Guia{
+.Carrinho .Guia{
     font-size: 20px;
     font-family: arial;
     display: flex;
     justify-content:space-between;
-    width: 60%;
+    width: 700px;
     margin-left: auto;
     margin-right: auto;
     
 }
-.Guia2{
+.Carrinho .Guia2{
     display: flex;
     justify-content:space-between;
-    width: 40%;
+    margin-right: 58px;
 
 }
-.Descrição{
+.Carrinho .Descricao{
     font-family: arial;
     font-size: 17px;
+    width: 100px;
 }
 
 .Carrinho{
     text-align: center;
 }
 
-.quantidade{
+.Carrinho .quantidade{
     font-family: arial;
     font-size: 17px; 
 }
 
-.quantidade button{
+.Carrinho .quantidade button{
     border-radius: 7px;
     background: rgb(255, 255, 255);
 }
 
 
 
-.quantidade{
+.Carrinho .quantidade{
     margin-left: 150px;
 }
 
-.preco{
-    margin-left: 100px;
+.Carrinho .preco{
+    margin-left: 300px;
 }
 
-.remover button {
+.Carrinho .remover button {
     border-radius: 7px;
     background-color: orange;
     border: none;
     height: 40px;
+}
+
+.Carrinho .imagem {
+    max-width: 150px;
 }

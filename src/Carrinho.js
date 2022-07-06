@@ -71,12 +71,30 @@ const Carrinho = () => {
             }
             console.log( item)
             localStorage.removeItem(item)
-            swal("Compra Finalizada!")
-            window.location.href='/';
+
+            swal({
+                title: "Compra Finalizada!",
+                icon: "success",
+                button: false,
+                timer: 1200
+              })
+              .then(terminaLogin => {
+                window.location.href='/';  
+              });
         }
         } else {
-            alert("É preciso realizar login para continuar!")
-            window.location.href='/login';
+
+            swal({
+                title: "Ops!",
+                text: `É preciso realizar o login primeiro!`,
+                icon: "warning",
+                button: false,
+                timer: 1000
+              })
+              .then(terminaLogin => {
+                window.location.href='/login';  
+              });
+
         }
     }
 
@@ -86,6 +104,9 @@ const Carrinho = () => {
         localStorage.removeItem("produto" + id)
         window.location.href='/carrinho';
     }
+
+    //Envia pedido
+
     
 
     return(
@@ -94,7 +115,7 @@ const Carrinho = () => {
         
             <div className='Carrinho'>
 
-                {(produtos == 0? "Nada para ver aqui!" : <div className='Guia'> <p>Produto</p> <div className='Guia2'> <p>Preço</p> <p>Qtd.</p></div></div>)}
+                {(produtos == 0? "Nada para ver aqui!" : <div className='Guia'> <p>Produto</p> <div className='Guia2'> <p>Preço</p> </div></div>)}
 
                 {(produtos == 0 ? "": 
     
@@ -107,11 +128,11 @@ const Carrinho = () => {
 
 
         <div className="Elementos">
-            <img alt='Compras' src={u.imagem}/>
+            <img className='imagem' alt='Compras' src={u.imagem}/>
 
             <Link className="Link" to={'/produto'}> 
 
-            <div className='Descrição'>
+            <div className='Descricao'>
                 
             <p>{u.nome}</p>
             
@@ -122,12 +143,7 @@ const Carrinho = () => {
                 <p>{dinheiro}</p>
             </div>
 
-            <div className="quantidade">
-
-            <p> Quantidade de produto
-                <br/> 
-                <button onClick={() => alteraQuantidade( quantidade - 1)}><b>-</b></button> {quantidade} <button onClick={()=> alteraQuantidade( quantidade + 1)}><b>+</b></button></p>
-            </div>
+            
 
             <div className='remover'>
                <button onClick={()=> RemoveItem(u.idprodutos)}>Remover</button>
@@ -140,7 +156,7 @@ const Carrinho = () => {
                 }) 
                 
                 )}
-                {(produtos == 0 ? "" : <button onClick={()=> FinalizarCompra()}>Finalizar Compra</button>)}
+                {(produtos == 0 ? "" : <div className='remover'><button onClick={()=> FinalizarCompra()}>Finalizar Compra</button></div>)}
 
                 
 
