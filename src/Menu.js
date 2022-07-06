@@ -32,9 +32,6 @@ const Menu = () => {
                 
             </div>
 
-            <Link to="/carrinho">
-                Meu cu
-            </Link>
 
             <div className="Pesquisa">
                 <form onSubmit={(e)=> FazPesquisa(e)}>
@@ -44,14 +41,16 @@ const Menu = () => {
                     <input required id="pesquisa" placeholder="Insira um produto de interesse..." autoFocus/>
                     
                     <button>Buscar</button>
+
+                    <Link to="/carrinho">
+                        <img className="icone" src="https://i.imgur.com/OXzf3ww.png"/>
+                    </Link>
                     
                     
                 </form>
             </div>
 
-            <div className="Teste">
-                <Link to={'/pedidos'}>Pedidos</Link>
-            </div>
+            
 
             <div>
                 
